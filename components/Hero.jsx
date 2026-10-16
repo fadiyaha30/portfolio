@@ -1,0 +1,20 @@
+export default function Hero() {
+  return (
+    <section className="hero" id="home">
+      <div className="hero-layout">
+        <div className="hero-content">
+          <div className="eyebrow"><span className="dot"></span> WEB DEVELOPER · JAPAN</div>
+          <h1>Thoughtful work.<br /><span>Across the web.</span></h1>
+          <p className="hero-name">Hi, I’m <strong>Fadiyah Adiningsih.</strong> Call me Faya.</p>
+          <p className="hero-copy">I build web applications from interface to backend.<br />Originally from Indonesia, now working in Japan.</p>
+          <div className="actions"><a className="button" href="#experience">Explore my experience <span>↗</span></a><a className="text-link" href="#about">Get to know me ↓</a></div>
+        </div>
+        <figure className="profile-frame glass">
+          <div className="profile-crop"><img src="/assets/faya-blurred.png" alt="Faya smiling, wearing a navy hijab and glasses" width="1019" height="1358" fetchPriority="high" /></div>
+          <figcaption>Faya <span>Indonesia → Japan</span></figcaption>
+        </figure>
+      </div>
+      <div className="hero-note"><span>Frontend &amp; backend development</span><span>Indonesia → Japan</span></div>
+    </section>
+  );
+}
