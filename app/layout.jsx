@@ -1,4 +1,5 @@
 import "./globals.css";
+import HydrationComplete from "../components/HydrationComplete";
 
 export const metadata = {
   title: "Faya — Web Developer",
@@ -10,7 +11,10 @@ export const viewport = { themeColor: "#f7f8fb" };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <HydrationComplete />
+      </body>
     </html>
   );
 }
