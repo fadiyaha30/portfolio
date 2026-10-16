@@ -1,6 +1,6 @@
 # Faya Portfolio
 
-A React portfolio built with the Next.js App Router. The original design, content, and local images are preserved. Static sections render on the server; navigation highlighting and skill filters use client components.
+A React portfolio built with TypeScript and the Next.js App Router. The original design, content, and local images are preserved. Static sections render on the server; navigation highlighting and skill filters use client components.
 
 ## Run locally
 
@@ -15,6 +15,16 @@ Open http://localhost:3000. Stop the previous Python server with Ctrl+C first if
 
 The previous Python static-server command no longer serves the application.
 
+## Check changes
+
+```sh
+npm run typecheck
+npm test
+npm run build
+```
+
+TypeScript runs in strict mode. Application components use `.tsx`, and browser instrumentation uses `.ts`. The test harness remains CommonJS and compiles the instrumentation with the project TypeScript compiler before testing its behavior.
+
 ## Production
 
 ```sh
@@ -28,8 +38,8 @@ Import the GitHub repository and select the Next.js framework preset. Use the re
 
 ## Edit
 
-- `app/page.jsx`: page composition and section ordering.
-- `app/layout.jsx`: document layout, title, description, and viewport metadata.
+- `app/page.tsx`: page composition and section ordering.
+- `app/layout.tsx`: document layout, title, description, and viewport metadata.
 - `app/globals.css`: shared styles and responsive layout.
 - `components/`: portfolio sections, header, footer, and skill filters.
 - `public/assets/`: profile images. The site displays `faya-blurred.png`; the original photo is retained.

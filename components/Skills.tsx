@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 
-const skills = [
+type SkillCategory = "frontend" | "backend" | "cloud" | "tools";
+type SkillFilter = "all" | SkillCategory;
+
+type Skill = {
+  category: SkillCategory;
+  label: string;
+  title: string;
+  technologies: string;
+};
+
+const skills: Skill[] = [
   {
     "category": "frontend",
     "label": "FRONTEND",
@@ -28,7 +38,7 @@ const skills = [
     "technologies": "Git · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
   }
 ];
-const filters = [
+const filters: { value: SkillFilter; label: string }[] = [
   { value: "all", label: "All" },
   { value: "frontend", label: "Frontend" },
   { value: "backend", label: "Backend" },
@@ -37,7 +47,7 @@ const filters = [
 ];
 
 export default function Skills() {
-  const [selected, setSelected] = useState("all");
+  const [selected, setSelected] = useState<SkillFilter>("all");
   const [hasFiltered, setHasFiltered] = useState(false);
   const visibleCount = skills.filter(
     (skill) => selected === "all" || skill.category === selected,

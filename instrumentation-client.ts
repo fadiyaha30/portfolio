@@ -6,8 +6,11 @@ if (
   process.env.NODE_ENV === "development" &&
   ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname)
 ) {
-  function cleanElement(element) {
-    if (element.nodeType !== 1) return;
+  function isElement(node: Node): node is Element {
+    return node.nodeType === 1;
+  }
+
+  function cleanElement(element: Element) {
 
     for (const { name } of [...element.attributes]) {
       if (
@@ -21,7 +24,7 @@ if (
     }
   }
 
-  function cleanTree(root) {
+  function cleanTree(root: Element) {
     cleanElement(root);
     for (const element of root.querySelectorAll(
       "[bis_skin_checked], [bis_register], body",
@@ -37,10 +40,12 @@ if (
   // already absent marker does nothing, so our own mutations terminate.
   const observer = new MutationObserver((records) => {
     for (const record of records) {
-      if (record.type === "attributes") cleanElement(record.target);
+      if (record.type === "attributes") {
+        if (isElement(record.target)) cleanElement(record.target);
+      }
       else {
         for (const node of record.addedNodes) {
-          if (node.nodeType === 1) cleanTree(node);
+          if (isElement(node)) cleanTree(node);
         }
       }
     }

@@ -4,7 +4,11 @@ const { join } = require('node:path');
 const { test } = require('node:test');
 const { runInNewContext } = require('node:vm');
 
-const source = readFileSync(join(__dirname, '../instrumentation-client.js'), 'utf8');
+const { transpileModule, ScriptTarget, ModuleKind } = require('typescript');
+const source = transpileModule(
+  readFileSync(join(__dirname, '../instrumentation-client.ts'), 'utf8'),
+  { compilerOptions: { target: ScriptTarget.ES2017, module: ModuleKind.CommonJS } },
+).outputText;
 
 function element(attributes = {}, children = []) {
   const values = new Map(Object.entries(attributes));
