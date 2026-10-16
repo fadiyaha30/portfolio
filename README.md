@@ -1,32 +1,37 @@
 # Faya Portfolio
 
-Complete static portfolio source: HTML, CSS, JavaScript and local photo assets. No framework, dependencies, API keys, or environment variables are required.
+A React portfolio built with the Next.js App Router. The original design, content, and local images are preserved. Static sections render on the server; navigation highlighting and skill filters use client components.
 
 ## Run locally
 
-Open this folder in VS Code. In a terminal run:
+Requires Node.js 20.9 or newer and npm.
 
 ```sh
-python3 -m http.server 3000 --directory public
+npm install
+npm run dev
 ```
 
-On Windows, use `py -m http.server 3000 --directory public` if needed.
-Open http://localhost:3000. Alternatively use the VS Code Live Server extension on public/index.html.
+Open http://localhost:3000. Stop the previous Python server with Ctrl+C first if it is still using port 3000. Next.js refreshes the page automatically when you edit the source.
+
+The previous Python static-server command no longer serves the application.
+
+## Production
+
+```sh
+npm run build
+npm start
+```
 
 ## Deploy on Vercel
 
-1. Extract the ZIP and upload the contents of this folder to a new GitHub repository. Keep public/ and vercel.json at the repository root.
-2. Import the repository into Vercel.
-3. Use Framework Preset: Other; Root Directory: repository root; no Build Command; Output Directory: public.
-4. Deploy. vercel.json supplies the output configuration. No environment variables needed.
-
-Alternatively, run `npx vercel` from this folder and follow the prompts. Use `npx vercel --prod` for production.
+Import the GitHub repository and select the Next.js framework preset. Use the repository root and the default Next.js build and output settings; remove any older `public` output-directory override. No environment variables are required.
 
 ## Edit
 
-- public/index.html: text, links, project cards and timeline.
-- public/styles.css: responsive layout and glass styling.
-- public/app.js: skill filters and section navigation.
-- public/assets/: profile images. The site uses faya-blurred.png; original photo is retained too.
+- `app/page.jsx`: page composition and section ordering.
+- `app/layout.jsx`: document layout, title, description, and viewport metadata.
+- `app/globals.css`: shared styles and responsive layout.
+- `components/`: portfolio sections, header, footer, and skill filters.
+- `public/assets/`: profile images. The site displays `faya-blurred.png`; the original photo is retained.
 
-This is plain HTML/CSS/JavaScript, not React or TypeScript. It can be migrated later. Cycling Pit Stops and Travel Log remain labelled as in development. Your new Vercel deployment will be public unless you enable access protection.
+Cycling Pit Stops and Travel Log remain labelled as in development.
