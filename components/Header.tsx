@@ -11,7 +11,7 @@ const links = [
 ];
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return;
