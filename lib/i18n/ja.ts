@@ -30,7 +30,7 @@ export const ja = {
   "Graduated from Universitas Gadjah Mada in Indonesia with a Bachelor of Science in Electronics and Instrumentation.": "インドネシアのガジャマダ大学で電子工学・計測を専攻し、理学士号を取得しました。",
   "April 2024 · Japan": "2024年4月 · 日本",
   "PIARY": "株式会社ピアリー",
-  "Full Stack Developer at PIARY": "株式会社ピアリーでフルスタックエンジニアに",
+  "Full Stack Developer at PIARY": "フルスタックエンジニアに",
   "Started developing and maintaining web applications across frontend and backend at PIARY in Japan.": "日本の株式会社ピアリーにて、フロントエンドからバックエンドまでWebアプリケーションの開発・保守を開始しました。",
   "Today": "現在",
   "Building & learning": "開発と学びを重ねる",
