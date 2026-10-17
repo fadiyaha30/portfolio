@@ -1,3 +1,4 @@
+import WebsiteLink from "./WebsiteLink";
 import { getTranslator, type LocalizedProps } from "../lib/i18n";
 
 export default function Experience({ locale }: LocalizedProps) {
@@ -20,7 +21,7 @@ export default function Experience({ locale }: LocalizedProps) {
             </div>
             <div className="entry-title compact:flex-1">
               <h3 className="font-semibold text-[1rem] tracking-[-0.015625rem] m-0 compact:text-[0.875rem]">{t("Full Stack Developer")}</h3>
-              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]">{t("PIARY")}{" "}<span className="text-[color:var(--muted)]">{t("· Japan · Full-time")}</span></p>
+              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]"><WebsiteLink href="https://www.piary.jp/">{t("PIARY")}</WebsiteLink>{" "}<span className="text-[color:var(--muted)]">{t("· Japan · Full-time")}</span></p>
             </div>
             <span className="date ml-auto text-[0.6875rem] text-[color:var(--muted)] whitespace-nowrap compact:ml-[3.1875rem] compact:basis-full">{t("Apr 2024 — Present")}</span>
           </div>
@@ -29,7 +30,7 @@ export default function Experience({ locale }: LocalizedProps) {
           <div className="company-projects mt-[1.4375rem] pt-5 [border-top:0.0625rem_solid_var(--line)]">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROJECT CONTRIBUTIONS")}</span>
             <article className="nested-project mt-[0.9375rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
-              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("Aeta — Pregnancy & Healthcare Information")}</h4>
+              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.aeta-baby.jp/">{t("Aeta — Pregnancy & Healthcare Information")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service providing pregnancy, childbirth, and medical facility information.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Main developer")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.")}</p>
@@ -48,7 +49,7 @@ export default function Experience({ locale }: LocalizedProps) {
               </details>
             </article>
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
-              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("Web Invitation — Digital Invitation Service")}</h4>
+              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.piary.jp/written_invitation/webinvitation/">{t("Web Invitation — Digital Invitation Service")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service for creating online invitations, managing guest check-in, and handling payments.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Development team member")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Proposed guest check-in functionality and collaborated with the team on its implementation, payments, and updates to existing screens.")}</p>
