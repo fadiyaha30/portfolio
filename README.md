@@ -40,8 +40,11 @@ Import the GitHub repository and select the Next.js framework preset. Use the re
 
 - `app/page.tsx`: page composition and section ordering.
 - `app/layout.tsx`: document layout, title, description, and viewport metadata.
-- `app/globals.css`: shared styles and responsive layout.
-- `components/`: portfolio sections, header, footer, and skill filters.
+- `app/globals.css`: Tailwind imports, original design variables, base styles, and the shared glass effect. Preflight is omitted to preserve the existing browser defaults.
+- `components/`: portfolio sections, header, footer, and skill filters, styled with Tailwind utilities. Exact rem values preserve the original 125% scale.
+- `postcss.config.mjs`: Tailwind CSS PostCSS integration.
 - `public/assets/`: profile images. The site displays `faya-blurred.png`; the original photo is retained.
 
 Cycling Pit Stops and Travel Log remain labelled as in development.
+
+Responsive utilities retain the original inclusive breakpoints: `phone:` (up to 30em), `compact:` (54.6875em), `inset:` (84.375em), and `projects-stack:` (85.9375em). Unprefixed utilities apply at every size; these variants apply to smaller screens.

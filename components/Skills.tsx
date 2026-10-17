@@ -54,17 +54,17 @@ export default function Skills() {
   ).length;
 
   return (
-    <section id="skills" className="section">
-      <div className="section-heading">
-        <span className="number">05</span>
-        <h2>Tools &amp; technologies</h2>
+    <section id="skills" className="section pt-[1.9375rem] pb-[2.1875rem] px-0 compact:px-0 compact:py-[1.375rem]">
+      <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
+        <span className="number text-[0.625rem] text-[color:#8995a3]">05</span>
+        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">Tools &amp; technologies</h2>
       </div>
-      <div className="filters" role="group" aria-label="Filter skills">
+      <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem]" role="group" aria-label="Filter skills">
         {filters.map((filter) => (
           <button
             key={filter.value}
             type="button"
-            className={selected === filter.value ? "active" : undefined}
+            className={`[border:0.0625rem_solid_transparent] bg-[transparent] rounded-[0.5rem] text-[0.6875rem] text-[color:var(--muted)] cursor-pointer px-3 py-[0.4375rem] [&.active]:bg-[#e7edf4] [&.active]:text-[color:#465e77] [&.active]:[border-color:#dce4ed] hover:bg-[#edf1f7] ${(selected === filter.value ? "active" : undefined) ?? ""}`}
             aria-pressed={selected === filter.value}
             onClick={() => {
               setSelected(filter.value);
@@ -75,20 +75,23 @@ export default function Skills() {
           </button>
         ))}
       </div>
-      <div className="skills-grid">
+      <div className="skills-grid grid grid-cols-2 gap-[0.8125rem] items-start compact:grid-cols-1">
         {skills.map((skill) => (
           <div
             key={skill.category}
-            className="skill-card glass"
+            className="
+              skill-card glass rounded-[0.9375rem] [transition:transform_.2s,box-shadow_.2s] px-6 py-[1.375rem]
+              hover:[transform:translateY(-0.1875rem)] hover:shadow-[0_0.5rem_1.5625rem_#2a3e5510] [&[hidden]]:hidden
+              "
             hidden={selected !== "all" && selected !== skill.category}
           >
-            <span className="small-label">{skill.label}</span>
-            <h3>{skill.title}</h3>
-            <p>{skill.technologies}</p>
+            <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{skill.label}</span>
+            <h3 className="font-semibold text-[0.9375rem] tracking-[-0.015625rem] mt-[0.5625rem] mb-[0.625rem] mx-0">{skill.title}</h3>
+            <p className="text-[0.75rem] leading-[1.9] text-[color:var(--muted)] m-0">{skill.technologies}</p>
           </div>
         ))}
       </div>
-      <p id="filter-status" className="sr-only" aria-live="polite">
+      <p id="filter-status" className="absolute w-[0.0625rem] h-[0.0625rem] overflow-hidden [clip-path:inset(50%)]" aria-live="polite">
         {hasFiltered ? `${visibleCount} skill categories shown.` : ""}
       </p>
     </section>
