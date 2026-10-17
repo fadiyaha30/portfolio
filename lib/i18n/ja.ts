@@ -85,7 +85,7 @@ export const ja = {
   "Assisted with investigation and testing of facial recognition technology as part of research and development support.": "研究開発のサポートとして、顔認識技術の調査・検証を補助しました。",
   "Back to top ↑": "ページ上部へ ↑",
   "· Japan": "· 日本",
-  "Hi, I’m Faya. I build and improve web applications across frontend and backend,": "はじめまして、Fayaです。フロントエンドからバックエンドまで、",
+  "Hi, I’m Faya. I build and improve web applications across frontend and backend,": "はじめまして、ファヤです。フロントエンドからバックエンドまで、",
   "from user-facing features to the systems behind them.": "ユーザーに届く機能と、それを支える仕組みを開発・改善しています。",
   "Originally from Indonesia, I’m now working as a Full Stack Developer in Japan.": "インドネシア出身。現在は日本でフルスタックエンジニアとして働いています。",
   "Professional experience": "開発経験",
