@@ -32,8 +32,8 @@ export default function Experience({ locale }: LocalizedProps) {
             <article className="nested-project mt-[0.9375rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.aeta-baby.jp/">{t("Aeta — Pregnancy & Healthcare Information")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service providing pregnancy, childbirth, and medical facility information.")}</p>
-              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Main developer")}</p>
-              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.")}</p>
+              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
+              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Main point of contact for feature development, maintenance, and troubleshooting. Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
                   list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
@@ -51,7 +51,7 @@ export default function Experience({ locale }: LocalizedProps) {
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://inv.piary.jp/">{t("Web Invitation — Digital Invitation Service")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service for creating online invitations, managing guest check-in, and handling payments.")}</p>
-              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Development team member")}</p>
+              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Development Team Member")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Proposed guest check-in functionality and collaborated with the team on its implementation, payments, and updates to existing screens.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
@@ -70,8 +70,8 @@ export default function Experience({ locale }: LocalizedProps) {
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("Intangible — 360° Employee Evaluation Platform")}</h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A multi-tenant SaaS for self, peer, and manager evaluations, with results that HR can compare over time.")}</p>
-              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Main developer · Operator Admin area")}</p>
-              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Joined an existing product partway through development and built its operator-facing screens and supporting functionality from scratch.")}</p>
+              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer · Operator Admin Area")}</p>
+              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Primary developer and main point of contact for the Operator Admin area. Joined an existing product partway through development and built its operator-facing screens and supporting functionality from scratch.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
                   list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
@@ -89,7 +89,7 @@ export default function Experience({ locale }: LocalizedProps) {
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://help.piary.jp/">{t("PIARY FAQ — Internal FAQ System")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("An internal system for searching and managing frequently asked questions.")}</p>
-              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Independent developer")}</p>
+              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Sole Developer")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Developed the system from design and implementation through production deployment.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
