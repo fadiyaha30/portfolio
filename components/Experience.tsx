@@ -49,7 +49,7 @@ export default function Experience({ locale }: LocalizedProps) {
               </details>
             </article>
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
-              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.piary.jp/written_invitation/webinvitation/">{t("Web Invitation — Digital Invitation Service")}</WebsiteLink></h4>
+              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://inv.piary.jp/">{t("Web Invitation — Digital Invitation Service")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service for creating online invitations, managing guest check-in, and handling payments.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Development team member")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Proposed guest check-in functionality and collaborated with the team on its implementation, payments, and updates to existing screens.")}</p>
@@ -87,7 +87,7 @@ export default function Experience({ locale }: LocalizedProps) {
               </details>
             </article>
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
-              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("PIARY FAQ — Internal FAQ System")}</h4>
+              <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://help.piary.jp/">{t("PIARY FAQ — Internal FAQ System")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("An internal system for searching and managing frequently asked questions.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Independent developer")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Developed the system from design and implementation through production deployment.")}</p>
