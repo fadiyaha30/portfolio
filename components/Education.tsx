@@ -12,7 +12,9 @@ export default function Education({ locale }: LocalizedProps) {
         education-card glass flex items-center gap-[1.1875rem] rounded-[1rem] px-[1.6875rem] py-6
         compact:grid compact:grid-cols-[auto_minmax(0,1fr)] compact:items-start compact:gap-3 compact:p-5 phone:p-4
         ">
-        <div className="education-mark text-[1.375rem] text-[color:#8193a7] self-start" aria-hidden="true">↗</div>
+        <div className="education-mark flex h-[2.4375rem] w-[2.4375rem] shrink-0 items-center justify-center self-start rounded-[0.6875rem] bg-[#17365d] p-[0.35rem]" aria-hidden="true">
+          <img src="/assets/ugm-logo.webp" alt="" width="68" height="70" className="block h-full w-full object-contain" />
+        </div>
         <div className="min-w-0">
           <h3 className="font-semibold text-[1rem] tracking-[-0.015625rem] m-0 compact:text-[0.875rem]">{t("Universitas Gadjah Mada")}</h3>
           <p className="degree text-[0.8125rem] text-[color:#5c7187] mx-0 my-1">{t("Electronics and Instrumentation")}</p>
