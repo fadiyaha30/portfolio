@@ -27,7 +27,7 @@ export const ja = {
   "Supported research, testing, and development with Python and AWS at PT Ruang Cipta Teknologi.": "PT Ruang Cipta Teknologiにて、PythonとAWSを用いた調査・検証・開発をサポートしました。",
   "February 2024 · Graduation": "2024年2月 · 大学卒業",
   "Electronics and Instrumentation": "電子工学・計測",
-  "Graduated from Universitas Gadjah Mada, with a thesis connecting YOLO car detection to an automatic barrier prototype.": "ガジャマダ大学を卒業。卒業研究では、YOLOによる車両検出と自動開閉バーの試作を連携させました。",
+  "Graduated from Universitas Gadjah Mada with a Bachelor of Science in Electronics and Instrumentation.": "ガジャマダ大学で電子工学・計測を専攻し、理学士号を取得しました。",
   "April 2024 · Japan": "2024年4月 · 日本",
   "Full Stack Developer at PIARY": "PIARYでフルスタックエンジニアに",
   "Started developing and maintaining web applications across frontend and backend at PIARY in Japan.": "日本のPIARYにて、フロントエンドからバックエンドまでWebアプリケーションの開発・保守を開始しました。",
