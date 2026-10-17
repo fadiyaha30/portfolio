@@ -26,3 +26,11 @@
 .hero-experience-since{margin:0.3rem 0 0;font-size:0.625rem;line-height:1.7;color:var(--muted)}
 .hero .actions{margin-top:1.25rem}
 @media(max-width:54.6875em){.profile-frame{grid-row:auto}.hero-experience{padding:0.9rem 1rem}.hero .actions{flex-wrap:wrap}}
+
+/* Lead with the full name; retain a friendly introduction and clear role. */
+.hero-greeting{margin:0;font-size:0.8rem;line-height:1.6;color:var(--muted)}
+.hero h1.hero-title{font-size:clamp(2.15rem,5.5vw,3.625rem);line-height:1.08;letter-spacing:-0.12rem;margin:0.65rem 0 0.85rem}
+.hero-title>span{display:block}
+.hero-role{display:flex;flex-wrap:wrap;align-items:center;gap:0.55rem;margin:0 0 1rem;font-size:0.875rem;font-weight:500;line-height:1.6}
+.hero-role .dot{flex-shrink:0}
+.hero-location{font-weight:400;color:var(--muted)}
