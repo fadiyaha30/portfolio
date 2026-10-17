@@ -6,7 +6,7 @@ export default function Hero() {
           <p className="hero-greeting">Hi, I’m Faya.</p>
           <h1 className="hero-title">Fadiyah <span>Adiningsih</span></h1>
           <p className="hero-role"><span className="dot" aria-hidden="true" />Full Stack Developer <span className="hero-location">· Japan</span></p>
-          <p className="hero-copy">I build web applications from interface to backend.</p>
+          <p className="hero-copy">I build web applications from interface to backend.<br />Originally from Indonesia, now working in Japan.</p>
           <div className="hero-experience glass" role="group" aria-label="Professional experience">
             <p className="hero-experience-value">
               <strong>2+</strong>
