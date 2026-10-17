@@ -15,6 +15,10 @@ Open http://localhost:3000. Stop the previous Python server with Ctrl+C first if
 
 The previous Python static-server command no longer serves the application.
 
+## Languages
+
+English is available at `/` and Japanese at `/ja`. Use the EN / 日本語 switch in the header to change language. Both pages are rendered on the server with localized content, accessible labels, HTML language, and search metadata. They share the same portfolio components and design.
+
 ## Check changes
 
 ```sh
@@ -38,8 +42,11 @@ Import the GitHub repository and select the Next.js framework preset. Use the re
 
 ## Edit
 
-- `app/page.tsx`: page composition and section ordering.
-- `app/layout.tsx`: document layout, title, description, and viewport metadata.
+- `components/Portfolio.tsx`: shared page composition and section ordering.
+- `app/(english)/`: English page and root layout at `/`.
+- `app/(japanese)/`: Japanese page and root layout at `/ja`.
+- `components/Document.tsx`: shared document layout with the correct HTML language.
+- `lib/i18n/`: typed translations, locale helpers, and language-specific metadata. English source text is used as the message key; add Japanese translations in `ja.ts`.
 - `app/globals.css`: Tailwind imports, original design variables, base styles, and the shared glass effect. Preflight is omitted to preserve the existing browser defaults.
 - `components/`: portfolio sections, header, footer, and skill filters, styled with Tailwind utilities. Exact rem values preserve the original 125% scale.
 - `postcss.config.mjs`: Tailwind CSS PostCSS integration.

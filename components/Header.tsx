@@ -1,6 +1,9 @@
 "use client";
 
+import { getTranslator, type LocalizedProps } from "../lib/i18n";
+
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const links = [
   { id: "about", label: "About" },
@@ -8,9 +11,11 @@ const links = [
   { id: "education", label: "Education" },
   { id: "work", label: "Projects" },
   { id: "skills", label: "Skills" },
-];
+] as const;
 
-export default function Header() {
+export default function Header({ locale }: LocalizedProps) {
+  // Use the route's locale for both server rendering and hydration.
+  const t = getTranslator(locale);
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
@@ -40,7 +45,7 @@ export default function Header() {
       compact:top-[0.625rem] compact:rounded-[0.8125rem] compact:px-[1.0625rem] compact:py-[0.8125rem]
       ">
       <a className="brand text-[1.4375rem] font-[650] tracking-[-0.0625rem] compact:text-[1.25rem]" href="#home">Faya<span className="text-[color:#7a97b1]">.</span></a>
-      <nav className="ml-auto flex gap-[1.625rem] compact:ml-0 compact:basis-full compact:gap-[1.0625rem] compact:overflow-x-auto compact:pb-1" aria-label="Main navigation">
+      <nav className="ml-auto flex gap-[1.625rem] compact:order-3 compact:ml-0 compact:basis-full compact:gap-[1.0625rem] compact:overflow-x-auto compact:pb-1" aria-label={t("Main navigation")}>
         {links.map((link) => (
           <a
             key={link.id}
@@ -48,10 +53,11 @@ export default function Header() {
             className={`text-[0.75rem] text-[color:var(--muted)] relative px-0 py-[0.1875rem] hover:text-[color:var(--text)] [&.active]:text-[color:var(--text)] [&.active]:after:content-[''] [&.active]:after:absolute [&.active]:after:w-1 [&.active]:after:h-1 [&.active]:after:bg-[var(--accent)] [&.active]:after:rounded-full [&.active]:after:bottom-[-0.3125rem] [&.active]:after:left-[calc(50%_-_0.125rem)] compact:text-[0.625rem] compact:whitespace-nowrap ${(activeSection === link.id ? "active" : undefined) ?? ""}`}
             aria-current={activeSection === link.id ? "location" : undefined}
           >
-            {link.label}
+            {t(link.label)}
           </a>
         ))}
       </nav>
+      <LanguageSwitcher locale={locale} />
     </header>
   );
 }
