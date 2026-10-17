@@ -6,7 +6,7 @@ export default function About({ locale }: LocalizedProps) {
     <section id="about" className="section pt-[1.9375rem] pb-[2.1875rem] px-0 compact:px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
         <span className="number text-[0.625rem] text-[color:#8995a3]">01</span>
-        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("A little about me")}</h2>
+        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("About me")}</h2>
       </div>
       <div className="about-grid grid grid-cols-[1.2fr_1fr] gap-[3.125rem] items-start compact:grid-cols-1 compact:gap-[1.375rem]">
         <div>
@@ -20,7 +20,7 @@ export default function About({ locale }: LocalizedProps) {
           </div>
         </div>
         <aside className="about-journey grid gap-5 min-w-0 compact:gap-[0.9375rem]" aria-label={t("My professional journey")}>
-          <div className="journey glass rounded-[1.0625rem] mt-1 px-[1.6875rem] py-6 compact:max-w-none">
+          <div className="journey glass rounded-[1.0625rem] mt-1 px-[1.6875rem] py-6 compact:max-w-none phone:p-4">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("MY JOURNEY")}</span>
             <div className="journey-path flex items-center justify-between gap-[0.9375rem] mt-5">
               <div>
@@ -36,7 +36,7 @@ export default function About({ locale }: LocalizedProps) {
               </div>
             </div>
           </div>
-          <div className="journey-timeline glass rounded-[1.0625rem] px-[1.6875rem] py-6 compact:p-6">
+          <div className="journey-timeline glass rounded-[1.0625rem] px-[1.6875rem] py-6 compact:p-6 phone:p-4">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROFESSIONAL MILESTONES")}</span>
             <ol className="list-none mt-6 mb-0 p-0 mx-0">
               <li className="

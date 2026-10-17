@@ -14,7 +14,7 @@ export default function Portfolio({ locale }: LocalizedProps) {
     <>
       <a className="skip fixed -top-20 left-5 bg-[white] z-[10] p-3 focus:top-[0.625rem]" href="#main">{t("Skip to content")}</a>
       <Header locale={locale} />
-      <main className="max-w-225 m-auto inset:mx-[8%]" id="main">
+      <main className="max-w-225 m-auto inset:mx-[8%] phone:mx-4" id="main">
         <Hero locale={locale} />
         <About locale={locale} />
         <Experience locale={locale} />
