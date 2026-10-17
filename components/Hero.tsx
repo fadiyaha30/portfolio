@@ -53,7 +53,7 @@ export default function Hero({ locale }: LocalizedProps) {
         </div>
         <figure className="
           profile-frame glass rounded-[1.4375rem] [transform:rotate(2deg)] p-[0.5625rem] m-0
-          compact:justify-self-center compact:max-w-full compact:w-[12.1875rem] compact:[grid-row:auto] compact:[transform:rotate(1deg)]
+          compact:justify-self-center compact:max-w-full compact:w-[12.1875rem] compact:row-start-1 compact:[transform:rotate(1deg)]
           ">
           <div className="profile-crop h-70 overflow-hidden rounded-[1rem] compact:h-[13.125rem]"><img className="block w-full h-full object-cover object-[50%_48%] rounded-none [transform:scale(1.3)] origin-[50%_48%]" src="/assets/faya-blurred.png" alt={t("Faya smiling, wearing a navy hijab and glasses")} width="1019" height="1358" fetchPriority="high" /></div>
           <figcaption className="flex justify-between items-center pt-3 pb-[0.3125rem] text-[0.75rem] font-semibold px-2">Faya <span className="text-[0.5625rem] font-normal text-[color:var(--muted)]">{t("Indonesia → Japan")}</span></figcaption>
