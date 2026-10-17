@@ -20,7 +20,7 @@ export default function About({ locale }: LocalizedProps) {
           </div>
         </div>
         <aside className="about-journey grid gap-5 min-w-0 compact:gap-[0.9375rem]" aria-label={t("My professional journey")}>
-          <div className="journey glass rounded-[1.0625rem] mt-1 px-[1.6875rem] py-6 compact:max-w-none">
+          <div className="journey glass rounded-[1.0625rem] mt-1 px-[1.6875rem] py-6 compact:max-w-none phone:p-4">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("MY JOURNEY")}</span>
             <div className="journey-path flex items-center justify-between gap-[0.9375rem] mt-5">
               <div>
@@ -36,7 +36,7 @@ export default function About({ locale }: LocalizedProps) {
               </div>
             </div>
           </div>
-          <div className="journey-timeline glass rounded-[1.0625rem] px-[1.6875rem] py-6 compact:p-6">
+          <div className="journey-timeline glass rounded-[1.0625rem] px-[1.6875rem] py-6 compact:p-6 phone:p-4">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROFESSIONAL MILESTONES")}</span>
             <ol className="list-none mt-6 mb-0 p-0 mx-0">
               <li className="

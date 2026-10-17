@@ -48,7 +48,7 @@
   :focus-visible { outline: 0.125rem solid var(--accent); outline-offset: 0.3125rem; }
 
   @media (max-width: 54.6875em) {
-    html { scroll-padding-top: 8.125rem; }
+    html { scroll-padding-top: 5rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {

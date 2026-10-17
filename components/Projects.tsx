@@ -13,7 +13,7 @@ export default function Projects({ locale }: LocalizedProps) {
       </div>
       <h3 className="project-group-heading font-[550] text-[0.9375rem] tracking-[-0.015625rem] mt-0 mb-4 text-[color:#65778b] mx-0">{t("Personal projects")}</h3>
       <div className="personal-projects grid gap-[0.875rem] mb-4 grid-cols-3 items-start projects-stack:grid-cols-2 compact:grid-cols-1">
-        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem]">
+        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT · JAPANESE LEARNING")}</span></div>
           <h3 className="font-medium text-[1.3125rem] tracking-[-0.03125rem] mt-0 mb-3 mx-0">jp-dict</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A Japanese learning web app that brings JLPT vocabulary search, flashcards, and speech tools together. Built as a personal project to support Japanese study.")}</p>
@@ -32,7 +32,7 @@ export default function Projects({ locale }: LocalizedProps) {
           </details>
           <div className="project-actions flex gap-[1.125rem] mt-[0.875rem] pt-[0.125rem]"><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] mt-[0.8125rem] hover:underline" href="https://jp-dict-five.vercel.app/" target="_blank" rel="noopener noreferrer">{t("Live app ↗")}</a><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] mt-[0.8125rem] hover:underline" href="https://github.com/fadiyaha30/jp-dict" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
         </article>
-        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem]">
+        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("In development")}</span></div>
           <h3 className="font-medium text-[1.3125rem] tracking-[-0.03125rem] mt-0 mb-3 mx-0">Cycling Pit Stops</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A mobile-friendly web app for finding toilets, cafés, rest areas, and repair help during a bicycle ride. Inspired by my own cycling trips, starting around Lake Hamana and extending to Shizuoka and Aichi.")}</p>
@@ -59,7 +59,7 @@ export default function Projects({ locale }: LocalizedProps) {
             pt-[0.8125rem] [border-top:0.0625rem_solid_var(--line)] mx-0
             ">{t("GitHub and live demo links will be added when ready.")}</p>
         </article>
-        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem]">
+        <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("In development")}</span></div>
           <h3 className="font-medium text-[1.3125rem] tracking-[-0.03125rem] mt-0 mb-3 mx-0">Travel Log</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A private travel diary organised around trips, with photos, notes, and places kept together. Designed for quick journaling on the road and selective sharing with friends.")}</p>
@@ -89,7 +89,7 @@ export default function Projects({ locale }: LocalizedProps) {
         </article>
       </div>
       <h3 className="project-group-heading academic-heading font-[550] text-[0.9375rem] tracking-[-0.015625rem] mt-[1.875rem] mb-4 text-[color:#65778b] mx-0">{t("Academic projects")}</h3>
-      <article className="experience-card glass thesis-card rounded-[1rem] [scroll-margin-top:7.5rem] max-w-none px-[1.6875rem] py-6 compact:p-5" id="thesis">
+      <article className="experience-card glass thesis-card rounded-[1rem] [scroll-margin-top:7.5rem] max-w-none px-[1.6875rem] py-6 compact:p-5 phone:p-4" id="thesis">
         <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("ACADEMIC PROJECT · UNDERGRADUATE THESIS")}</span>
         <h3 className="font-medium text-[1.4375rem] tracking-[-0.03125rem] mt-3 mb-4 leading-[1.35] mx-0 compact:text-[1.25rem]">{t("Car Detection Simulation")}<br />{t("Using the YOLO Algorithm")}</h3>
         <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A prototype that connects computer vision with hardware: detecting toy cars and controlling an automatic barrier using an ESP32-CAM, Arduino, and a servo.")}</p>

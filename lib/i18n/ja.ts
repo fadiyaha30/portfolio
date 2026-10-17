@@ -7,6 +7,8 @@ export const ja = {
   "Skills": "スキル",
   "Skip to content": "本文へスキップ",
   "Main navigation": "メインナビゲーション",
+  "Open menu": "メニューを開く",
+  "Close menu": "メニューを閉じる",
   "A little about me": "私について",
   "A Full Stack Developer with curiosity": "好奇心を大切にしながら、",
   "for what comes next.": "次の可能性を探すフルスタックエンジニア。",

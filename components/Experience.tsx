@@ -11,7 +11,7 @@ export default function Experience({ locale }: LocalizedProps) {
         <span className="section-aside ml-auto text-[0.6875rem] text-[color:var(--muted)] compact:hidden">{t("Learning through building.")}</span>
       </div>
       <div className="experience-list grid gap-[0.875rem]">
-        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5">
+        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:p-4">
           <div className="entry-head flex gap-[0.875rem] items-center mb-4 compact:flex-wrap compact:gap-3">
             <div className="
               company-icon bg-white w-[2.4375rem] h-[2.4375rem] flex items-center
@@ -29,7 +29,7 @@ export default function Experience({ locale }: LocalizedProps) {
           <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Next.js</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">React</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">TypeScript</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">PHP</span></div>
           <div className="company-projects mt-[1.4375rem] pt-5 [border-top:0.0625rem_solid_var(--line)]">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROJECT CONTRIBUTIONS")}</span>
-            <article className="nested-project mt-[0.9375rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
+            <article className="nested-project mt-[0.9375rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.aeta-baby.jp/">{t("Aeta — Pregnancy & Healthcare Information")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service providing pregnancy, childbirth, and medical facility information.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
@@ -48,7 +48,7 @@ export default function Experience({ locale }: LocalizedProps) {
                 <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Next.js</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">TypeScript</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Strapi</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">GA4</span></div>
               </details>
             </article>
-            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
+            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://inv.piary.jp/">{t("Web Invitation — Digital Invitation Service")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service for creating online invitations, managing guest check-in, and handling payments.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Development Team Member")}</p>
@@ -67,7 +67,7 @@ export default function Experience({ locale }: LocalizedProps) {
                 <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">PHP</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">React</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Stripe</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Laravel Reverb</span></div>
               </details>
             </article>
-            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
+            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("Intangible — 360° Employee Evaluation Platform")}</h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A multi-tenant SaaS for self, peer, and manager evaluations, with results that HR can compare over time.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
@@ -86,7 +86,7 @@ export default function Experience({ locale }: LocalizedProps) {
                 <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Next.js</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">TypeScript</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Supabase</span></div>
               </details>
             </article>
-            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
+            <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://help.piary.jp/">{t("PIARY FAQ — Internal FAQ System")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("An internal system for searching and managing frequently asked questions.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Sole Developer")}</p>
@@ -107,7 +107,7 @@ export default function Experience({ locale }: LocalizedProps) {
             </article>
           </div>
         </article>
-        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5">
+        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:p-4">
           <div className="entry-head flex gap-[0.875rem] items-center mb-4 compact:flex-wrap compact:gap-3">
             <div className="
               company-icon secondary-icon bg-[#e8efec] text-[color:#6e8e81] w-[2.4375rem] h-[2.4375rem] flex
