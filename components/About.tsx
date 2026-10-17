@@ -7,12 +7,12 @@ export default function About() {
       </div>
       <div className="about-grid">
         <div>
-          <p className="lead">An developer with curiosity<br />for what comes next.</p>
+          <p className="lead">A Full Stack Developer with curiosity<br />for what comes next.</p>
           <div className="about-story">
             <p className="body-copy">I grew up watching Doraemon, and its futuristic gadgets sparked my curiosity about technology and Japan. That interest led me to study Electronics and Instrumentation at Universitas Gadjah Mada, where I learned to code and discovered how much I enjoyed building things with software. For my thesis, I combined YOLO car detection with an automatic barrier prototype, bringing software and hardware together.</p>
-            <p className="body-copy">Today, I’m living in Japan and working as a full-stack software developer, developing web applications across frontend and backend. Web development wasn’t a major focus of my degree, so much of my knowledge came from hands-on experience—researching, experimenting, and learning from the people around me. It feels special to see a childhood interest become part of my everyday life.</p>
+            <p className="body-copy">Today, I’m living in Japan and working as a Full Stack Developer, developing web applications across frontend and backend. Web development wasn’t a major focus of my degree, so much of my knowledge came from hands-on experience—researching, experimenting, and learning from the people around me. It feels special to see a childhood interest become part of my everyday life.</p>
             <p className="body-copy">My work has taught me to think beyond whether the code works. I consider how people will use a feature, whether a button’s purpose is clear, and how a change might affect their experience. Working with a team has also helped me communicate my ideas, listen to different perspectives, and find solutions together.</p>
-            <p className="body-copy">I want to keep growing as a software developer, building on my web development experience while exploring app development and other areas of software. Using AI in my daily work has also made me curious about how it works and how I could apply it in what I build.</p>
+            <p className="body-copy">I want to keep growing as a Full Stack Developer, building on my web development experience while exploring app development and other areas of software. Using AI in my daily work has also made me curious about how it works and how I could apply it in what I build.</p>
             <p className="body-copy">I’m excited to keep learning and exploring what I can build next!</p>
           </div>
         </div>
@@ -49,12 +49,12 @@ export default function About() {
               <li>
                 <span className="milestone-time">2024 · Japan</span>
                 <h3>A new chapter</h3>
-                <p>Moved to Japan and started working as a web developer at PIARY.</p>
+                <p>Moved to Japan and started working as a Full Stack Developer at PIARY.</p>
               </li>
               <li>
                 <span className="milestone-time">Today</span>
                 <h3>Building &amp; learning</h3>
-                <p>Growing as a full-stack developer, with curiosity about app development, AI, and what I can build next.</p>
+                <p>Growing as a Full Stack Developer, with curiosity about app development, AI, and what I can build next.</p>
               </li>
             </ol>
           </div>

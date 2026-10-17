@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-layout">
         <div className="hero-content">
-          <div className="eyebrow"><span className="dot"></span> WEB DEVELOPER · JAPAN</div>
+          <div className="eyebrow"><span className="dot"></span> Full Stack Developer · Japan</div>
           <h1>Thoughtful work.<br /><span>Across the web.</span></h1>
           <p className="hero-name">Hi, I’m <strong>Fadiyah Adiningsih.</strong> Call me Faya.</p>
           <p className="hero-copy">I build web applications from interface to backend.<br />Originally from Indonesia, now working in Japan.</p>
@@ -14,7 +14,7 @@ export default function Hero() {
           <figcaption>Faya <span>Indonesia → Japan</span></figcaption>
         </figure>
       </div>
-      <div className="hero-note"><span>Frontend &amp; backend development</span><span>Indonesia → Japan</span></div>
+      <div className="hero-note"><span>Full Stack Developer</span><span>Indonesia → Japan</span></div>
     </section>
   );
 }

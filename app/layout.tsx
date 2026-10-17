@@ -4,8 +4,8 @@ import "./globals.css";
 import HydrationComplete from "../components/HydrationComplete";
 
 export const metadata: Metadata = {
-  title: "Faya — Web Developer",
-  description: "Fadiyah Adiningsih — Indonesian web developer based in Japan.",
+  title: "Faya — Full Stack Developer",
+  description: "Fadiyah Adiningsih — Indonesian Full Stack Developer based in Japan.",
 };
 
 export const viewport: Viewport = { themeColor: "#f7f8fb" };

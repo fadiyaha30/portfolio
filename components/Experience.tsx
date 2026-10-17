@@ -11,7 +11,7 @@ export default function Experience() {
           <div className="entry-head">
             <div className="company-icon" aria-hidden="true">P</div>
             <div className="entry-title">
-              <h3>Web Developer</h3>
+              <h3>Full Stack Developer</h3>
               <p>PIARY <span>· Japan · Full-time</span></p>
             </div>
             <span className="date">Apr 2024 — Present</span>
