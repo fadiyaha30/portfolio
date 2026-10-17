@@ -27,7 +27,7 @@ export const ja = {
   "Supported research, testing, and development with Python and AWS at PT Ruang Cipta Teknologi.": "PT Ruang Cipta Teknologiにて、PythonとAWSを用いた調査・検証・開発をサポートしました。",
   "February 2024 · Graduation": "2024年2月 · 大学卒業",
   "Electronics and Instrumentation": "電子工学・計測",
-  "Graduated from Universitas Gadjah Mada in Indonesia with a Bachelor of Science in Electronics and Instrumentation.": "インドネシアのガジャマダ大学で電子工学・計測を専攻し、理学士号を取得しました。",
+  "Graduated from Universitas Gadjah Mada in Indonesia with a Bachelor of Science degree in Electronics and Instrumentation.": "インドネシアのガジャマダ大学で電子工学・計測を専攻し、理学士号を取得しました。",
   "April 2024 · Japan": "2024年4月 · 日本",
   "PIARY": "株式会社ピアリー",
   "Full Stack Developer at PIARY": "フルスタックエンジニアに",

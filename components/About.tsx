@@ -59,7 +59,7 @@ export default function About({ locale }: LocalizedProps) {
                 ">
                 <span className="milestone-time block text-[0.625rem] text-[color:#6c8196] leading-[1.5] mb-[0.3125rem]">{t("February 2024 · Graduation")}</span>
                 <h3 className="font-[550] text-[0.8125rem] tracking-[-0.015625rem] mt-0 mb-[0.3125rem] mx-0">{t("Electronics and Instrumentation")}</h3>
-                <p className="text-[0.6875rem] leading-[1.8] text-[color:var(--muted)] m-0">{t("Graduated from Universitas Gadjah Mada in Indonesia with a Bachelor of Science in Electronics and Instrumentation.")}</p>
+                <p className="text-[0.6875rem] leading-[1.8] text-[color:var(--muted)] m-0">{t("Graduated from Universitas Gadjah Mada in Indonesia with a Bachelor of Science degree in Electronics and Instrumentation.")}</p>
               </li>
               <li className="
                 relative pt-0 pr-0 pb-[1.5625rem] pl-[1.5625rem] ml-1 [border-left:0.0625rem_solid_#cbd6e2] last:pb-0
