@@ -1,5 +1,7 @@
 "use client";
 
+import { getTranslator, type LocalizedProps, type Message, formatSkillCount } from "../lib/i18n";
+
 import { useState } from "react";
 
 type SkillCategory = "frontend" | "backend" | "cloud" | "tools";
@@ -7,8 +9,8 @@ type SkillFilter = "all" | SkillCategory;
 
 type Skill = {
   category: SkillCategory;
-  label: string;
-  title: string;
+  label: Message;
+  title: Message;
   technologies: string;
 };
 
@@ -38,7 +40,7 @@ const skills: Skill[] = [
     "technologies": "Git · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
   }
 ];
-const filters: { value: SkillFilter; label: string }[] = [
+const filters: { value: SkillFilter; label: Message }[] = [
   { value: "all", label: "All" },
   { value: "frontend", label: "Frontend" },
   { value: "backend", label: "Backend" },
@@ -46,7 +48,8 @@ const filters: { value: SkillFilter; label: string }[] = [
   { value: "tools", label: "Tools & integrations" },
 ];
 
-export default function Skills() {
+export default function Skills({ locale }: LocalizedProps) {
+  const t = getTranslator(locale);
   const [selected, setSelected] = useState<SkillFilter>("all");
   const [hasFiltered, setHasFiltered] = useState(false);
   const visibleCount = skills.filter(
@@ -57,9 +60,9 @@ export default function Skills() {
     <section id="skills" className="section pt-[1.9375rem] pb-[2.1875rem] px-0 compact:px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
         <span className="number text-[0.625rem] text-[color:#8995a3]">05</span>
-        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">Tools &amp; technologies</h2>
+        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Tools & technologies")}</h2>
       </div>
-      <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem]" role="group" aria-label="Filter skills">
+      <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem]" role="group" aria-label={t("Filter skills")}>
         {filters.map((filter) => (
           <button
             key={filter.value}
@@ -71,7 +74,7 @@ export default function Skills() {
               setHasFiltered(true);
             }}
           >
-            {filter.label}
+            {t(filter.label)}
           </button>
         ))}
       </div>
@@ -85,14 +88,14 @@ export default function Skills() {
               "
             hidden={selected !== "all" && selected !== skill.category}
           >
-            <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{skill.label}</span>
-            <h3 className="font-semibold text-[0.9375rem] tracking-[-0.015625rem] mt-[0.5625rem] mb-[0.625rem] mx-0">{skill.title}</h3>
+            <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t(skill.label)}</span>
+            <h3 className="font-semibold text-[0.9375rem] tracking-[-0.015625rem] mt-[0.5625rem] mb-[0.625rem] mx-0">{t(skill.title)}</h3>
             <p className="text-[0.75rem] leading-[1.9] text-[color:var(--muted)] m-0">{skill.technologies}</p>
           </div>
         ))}
       </div>
       <p id="filter-status" className="absolute w-[0.0625rem] h-[0.0625rem] overflow-hidden [clip-path:inset(50%)]" aria-live="polite">
-        {hasFiltered ? `${visibleCount} skill categories shown.` : ""}
+        {hasFiltered ? formatSkillCount(locale, visibleCount) : ""}
       </p>
     </section>
   );
