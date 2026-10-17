@@ -64,7 +64,6 @@ export const ja = {
   "Migrated selected parts of PHP screens to React.": "PHP画面の一部をReactへ移行。",
   "Intangible — 360° Employee Evaluation Platform": "Intangible — 360度人事評価プラットフォーム",
   "A multi-tenant SaaS for self, peer, and manager evaluations, with results that HR can compare over time.": "自己評価・同僚評価・上司評価に対応し、人事担当者が結果の推移を比較できるマルチテナントSaaSです。",
-  "Primary Developer · Operator Admin Area": "主担当エンジニア · 運営管理画面",
   "Primary developer and main point of contact for the Operator Admin area. Joined an existing product partway through development and built its operator-facing screens and supporting functionality from scratch.": "運営管理画面の開発主担当・主な相談窓口を務めています。開発途中のプロダクトに参画し、運営者向けの管理画面と関連機能を一から構築しました。",
   "My implementation": "実装したこと",
   "Implemented organization and administrator management.": "組織・管理者の管理機能を実装。",

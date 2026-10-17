@@ -70,7 +70,7 @@ export default function Experience({ locale }: LocalizedProps) {
             <article className="nested-project mt-[0.875rem] bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4">
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">{t("Intangible — 360° Employee Evaluation Platform")}</h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A multi-tenant SaaS for self, peer, and manager evaluations, with results that HR can compare over time.")}</p>
-              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer · Operator Admin Area")}</p>
+              <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
               <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Primary developer and main point of contact for the Operator Admin area. Joined an existing product partway through development and built its operator-facing screens and supporting functionality from scratch.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
