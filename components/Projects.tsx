@@ -12,7 +12,7 @@ export default function Projects({ locale }: LocalizedProps) {
         <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Projects")}</h2>
       </div>
       <h3 className="project-group-heading font-[550] text-[0.9375rem] tracking-[-0.015625rem] mt-0 mb-4 text-[color:#65778b] mx-0">{t("Personal projects")}</h3>
-      <div className="personal-projects grid gap-[0.875rem] mb-4 grid-cols-3 items-start projects-stack:grid-cols-2 compact:grid-cols-1">
+      <div className="personal-projects grid gap-[0.875rem] mb-4 grid-cols-3 items-start compact:grid-cols-1">
         <article className="experience-card glass personal-project rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT · JAPANESE LEARNING")}</span></div>
           <h3 className="font-medium text-[1.3125rem] tracking-[-0.03125rem] mt-0 mb-3 mx-0">jp-dict</h3>
