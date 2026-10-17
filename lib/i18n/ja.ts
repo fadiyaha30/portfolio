@@ -112,7 +112,7 @@ export const ja = {
   "PERSONAL PROJECT": "個人開発",
   "In development": "開発中",
   "Live": "公開中",
-  "A mobile-friendly web app for finding toilets, cafés, rest areas, and repair help during a bicycle ride. Inspired by my own cycling trips, starting around Lake Hamana and extending to Shizuoka and Aichi.": "サイクリング中にトイレ、カフェ、休憩所、修理できる場所を探せる、スマートフォン向けWebアプリです。自身のサイクリング経験をきっかけに、浜名湖周辺から静岡・愛知へと対象エリアを広げる計画です。",
+  "A mobile-friendly web app for finding toilets, cafés, rest areas, and repair help during a bicycle ride. Inspired by my own cycling experiences.": "サイクリング中にトイレ、カフェ、休憩所、修理できる場所を探せる、スマートフォン向けWebアプリです。自身のサイクリング経験から着想を得ました。",
   "Project plan & technical direction": "開発計画・技術方針",
   "I’m developing this project to connect my full-stack experience with Python and geographic data. The current plan includes:": "フルスタック開発の経験をPythonや地理空間データと組み合わせるために開発しています。現在、以下の機能を計画しています。",
   "Nearby search by need and distance, with a map and an accessible list view.": "目的や距離に応じた周辺検索と、地図・アクセシブルな一覧表示。",
