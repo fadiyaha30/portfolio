@@ -9,7 +9,7 @@ export const ja = {
   "Main navigation": "メインナビゲーション",
   "Open menu": "メニューを開く",
   "Close menu": "メニューを閉じる",
-  "A little about me": "私について",
+  "About me": "私について",
   "A Full Stack Developer with curiosity": "好奇心を大切にしながら、",
   "for what comes next.": "次の可能性を探すフルスタックエンジニア。",
   "I grew up watching Doraemon, and its futuristic gadgets sparked my curiosity about technology and Japan. That curiosity eventually led me to study Electronics and Instrumentation at Universitas Gadjah Mada in Indonesia, where I discovered how much I enjoyed bringing ideas to life through code. For my thesis, I combined YOLO-based vehicle detection with an automatic barrier prototype, bringing software and hardware together.": "子どもの頃からドラえもんを見て育ち、その未来的なひみつ道具をきっかけに、テクノロジーと日本への好奇心が芽生えました。その好奇心に導かれてインドネシアのガジャマダ大学で電子工学・計測を学び、コードを通じてアイデアを形にする楽しさを知りました。卒業研究では、YOLOによる車両検出と自動開閉バーの試作を組み合わせ、ソフトウェアとハードウェアを連携させました。",

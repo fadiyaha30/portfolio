@@ -6,7 +6,7 @@ export default function About({ locale }: LocalizedProps) {
     <section id="about" className="section pt-[1.9375rem] pb-[2.1875rem] px-0 compact:px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
         <span className="number text-[0.625rem] text-[color:#8995a3]">01</span>
-        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("A little about me")}</h2>
+        <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("About me")}</h2>
       </div>
       <div className="about-grid grid grid-cols-[1.2fr_1fr] gap-[3.125rem] items-start compact:grid-cols-1 compact:gap-[1.375rem]">
         <div>
