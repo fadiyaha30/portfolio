@@ -18,7 +18,7 @@ export default function Experience({ locale }: LocalizedProps) {
               " aria-hidden="true">P</div>
             <div className="entry-title compact:flex-1">
               <h3 className="font-semibold text-[1rem] tracking-[-0.015625rem] m-0 compact:text-[0.875rem]">{t("Full Stack Developer")}</h3>
-              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]">PIARY <span className="text-[color:var(--muted)]">{t("· Japan · Full-time")}</span></p>
+              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]">{t("PIARY")}{" "}<span className="text-[color:var(--muted)]">{t("· Japan · Full-time")}</span></p>
             </div>
             <span className="date ml-auto text-[0.6875rem] text-[color:var(--muted)] whitespace-nowrap compact:ml-[3.1875rem] compact:basis-full">{t("Apr 2024 — Present")}</span>
           </div>
