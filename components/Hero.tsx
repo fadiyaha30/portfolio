@@ -11,7 +11,7 @@ export default function Hero({ locale }: LocalizedProps) {
           <p className="hero-copy text-[color:var(--muted)] text-[0.875rem] leading-[1.9] m-0 compact:text-[0.75rem]">{t("Hi, I’m Faya. I build and improve web applications across frontend and backend,")}{" "}<br className="compact:hidden" />{t("from user-facing features to the systems behind them.")}<br />{t("Originally from Indonesia, I’m now working as a Full Stack Developer in Japan.")}</p>
           <div className="
             hero-experience glass flex items-center gap-4 w-fit max-w-full mt-5 rounded-[1rem] px-[1.15rem]
-            py-[0.85rem] compact:px-4 compact:py-[0.9rem]
+            py-[0.85rem] compact:w-full compact:px-4 compact:py-[0.9rem]
             " role="group" aria-label={t("Professional experience")}>
             <p className="hero-experience-value grid gap-1 shrink-0 pr-4 [border-right:0.0625rem_solid_var(--line)] text-[color:var(--accent)] m-0">
               <strong className="text-[2.25rem] font-semibold leading-[1] tracking-[-0.08rem]">2+</strong>
