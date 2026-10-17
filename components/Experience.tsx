@@ -13,9 +13,11 @@ export default function Experience({ locale }: LocalizedProps) {
         <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5">
           <div className="entry-head flex gap-[0.875rem] items-center mb-4 compact:flex-wrap compact:gap-3">
             <div className="
-              company-icon bg-[#e9edf5] text-[color:#677f9a] w-[2.4375rem] h-[2.4375rem] flex items-center
-              justify-center rounded-[0.6875rem] text-[1rem] font-semibold shrink-0
-              " aria-hidden="true">P</div>
+              company-icon bg-white w-[2.4375rem] h-[2.4375rem] flex items-center
+              justify-center rounded-[0.6875rem] p-[0.25rem] shrink-0
+              " aria-hidden="true">
+              <img src="/assets/piary-logo.svg" alt="" width="120" height="27" className="block h-full w-full object-contain" />
+            </div>
             <div className="entry-title compact:flex-1">
               <h3 className="font-semibold text-[1rem] tracking-[-0.015625rem] m-0 compact:text-[0.875rem]">{t("Full Stack Developer")}</h3>
               <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]">{t("PIARY")}{" "}<span className="text-[color:var(--muted)]">{t("· Japan · Full-time")}</span></p>
