@@ -45,7 +45,7 @@ export const ja = {
   "Full Stack Developer": "フルスタックエンジニア",
   "· Japan · Full-time": "· 日本 · 正社員",
   "Apr 2024 — Present": "2024年4月〜現在",
-  "Developing and maintaining web services across frontend and backend, from improvements to existing products to new internal systems.": "既存サービスの改善から新しい社内システムの構築まで、フロントエンド・バックエンド両方の開発と保守を担当しています。",
+  "I contribute to the development, improvement, and maintenance of multiple web services, working across both frontend and backend. My responsibilities include implementing new features, enhancing existing functionality, troubleshooting issues, and supporting the ongoing operation of these services.": "複数のWebサービスの開発・改善・保守に、フロントエンドとバックエンドの両面から携わっています。新機能の実装、既存機能の改善、不具合の調査・対応、継続的なサービス運用のサポートを担当しています。",
   "PROJECT CONTRIBUTIONS": "担当プロジェクト",
   "Aeta — Pregnancy & Healthcare Information": "Aeta — 妊娠・出産・医療情報サービス",
   "A service providing pregnancy, childbirth, and medical facility information.": "妊娠・出産や医療機関に関する情報を提供するサービスです。",
