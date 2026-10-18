@@ -50,7 +50,7 @@ export const ja = {
   "Aeta — Pregnancy & Healthcare Information": "Aeta — 妊娠・出産・医療情報サービス",
   "A service providing pregnancy, childbirth, and medical facility information.": "妊娠・出産や医療機関に関する情報を提供するサービスです。",
   "Primary Developer": "主担当エンジニア",
-  "Main point of contact for feature development, maintenance, and troubleshooting. Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.": "機能開発・保守・不具合対応の主な窓口として、妊娠中の体重管理計算ツールやCMS連携など、既存サービスの開発・改善を担当しています。",
+  "As the primary developer, I handle feature development, improvements, maintenance, and troubleshooting for Aeta, working across frontend and backend within the existing service.": "Aetaの開発主担当として、既存サービスのフロントエンドからバックエンドまで、機能開発・改善・保守・不具合対応を担当しています。",
   "My contributions": "担当したこと",
   "Developed a calculator to support weight management during pregnancy.": "妊娠中の体重管理をサポートする計算ツールを開発。",
   "Implemented CMS integrations and improvements to existing functionality.": "CMS連携の実装と既存機能の改善を担当。",

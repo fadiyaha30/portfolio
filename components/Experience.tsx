@@ -33,7 +33,7 @@ export default function Experience({ locale }: LocalizedProps) {
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.aeta-baby.jp/">{t("Aeta — Pregnancy & Healthcare Information")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service providing pregnancy, childbirth, and medical facility information.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
-              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Main point of contact for feature development, maintenance, and troubleshooting. Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.")}</p>
+              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("As the primary developer, I handle feature development, improvements, maintenance, and troubleshooting for Aeta, working across frontend and backend within the existing service.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
                   list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
