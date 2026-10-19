@@ -4,7 +4,7 @@ import { getTranslator, type LocalizedProps, type Message, formatSkillCount } fr
 
 import { useState } from "react";
 
-type SkillCategory = "frontend" | "backend" | "cloud" | "tools" | "ai";
+type SkillCategory = "languages" | "frontend" | "backend" | "cloud" | "tools" | "ai";
 type SkillFilter = "all" | SkillCategory;
 
 type Skill = {
@@ -16,28 +16,34 @@ type Skill = {
 
 const skills: Skill[] = [
   {
+    "category": "languages",
+    "label": "LANGUAGES",
+    "title": "Programming & web languages",
+    "technologies": "TypeScript · JavaScript · PHP · Python · SQL · HTML · CSS"
+  },
+  {
     "category": "frontend",
     "label": "FRONTEND",
     "title": "Interfaces & interaction",
-    "technologies": "TypeScript · JavaScript · React · Next.js · HTML · CSS"
+    "technologies": "React · Next.js · Tailwind CSS"
   },
   {
     "category": "backend",
     "label": "BACKEND",
     "title": "Logic & data",
-    "technologies": "PHP · Python · SQL · MySQL · PostgreSQL · SQLite · Prisma · NextAuth"
+    "technologies": "MySQL · PostgreSQL · SQLite · Prisma · NextAuth"
   },
   {
     "category": "cloud",
     "label": "CLOUD",
     "title": "Infrastructure & delivery",
-    "technologies": "AWS (EC2, S3) · Supabase · Cloudinary · Coolify"
+    "technologies": "AWS (EC2, S3) · Vercel · Supabase · Cloudinary · Coolify"
   },
   {
     "category": "tools",
     "label": "TOOLS & INTEGRATIONS",
     "title": "The supporting pieces",
-    "technologies": "Git · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
+    "technologies": "Git · npm · VS Code · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
   },
   {
     "category": "ai",
@@ -48,6 +54,7 @@ const skills: Skill[] = [
 ];
 const filters: { value: SkillFilter; label: Message }[] = [
   { value: "all", label: "All" },
+  { value: "languages", label: "Languages" },
   { value: "frontend", label: "Frontend" },
   { value: "backend", label: "Backend" },
   { value: "cloud", label: "Cloud" },
@@ -89,10 +96,10 @@ export default function Skills({ locale }: LocalizedProps) {
         {skills.map((skill) => (
           <div
             key={skill.category}
-            className={`
+            className="
               skill-card glass rounded-[0.9375rem] [transition:transform_.2s,box-shadow_.2s] px-6 py-[1.375rem]
               hover:[transform:translateY(-0.1875rem)] hover:shadow-[0_0.5rem_1.5625rem_#2a3e5510] [&[hidden]]:hidden
-              ${skill.category === "ai" ? "col-span-2 compact:col-span-1" : ""}`}
+              "
             hidden={selected !== "all" && selected !== skill.category}
           >
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t(skill.label)}</span>

@@ -155,4 +155,7 @@ export const ja = {
   "AI tools": "AIツール",
   "AI TOOLS": "AIツール",
   "AI-assisted development": "AIを活用した開発",
+  "Languages": "言語",
+  "LANGUAGES": "言語",
+  "Programming & web languages": "プログラミング・Web言語",
 } as const;
