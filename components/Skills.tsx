@@ -4,7 +4,7 @@ import { getTranslator, type LocalizedProps, type Message, formatSkillCount } fr
 
 import { useState } from "react";
 
-type SkillCategory = "frontend" | "backend" | "cloud" | "tools";
+type SkillCategory = "frontend" | "backend" | "cloud" | "tools" | "ai";
 type SkillFilter = "all" | SkillCategory;
 
 type Skill = {
@@ -38,6 +38,12 @@ const skills: Skill[] = [
     "label": "TOOLS & INTEGRATIONS",
     "title": "The supporting pieces",
     "technologies": "Git · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
+  },
+  {
+    "category": "ai",
+    "label": "AI TOOLS",
+    "title": "AI-assisted development",
+    "technologies": "ChatGPT · OpenAI Codex · Anthropic Claude · Cursor"
   }
 ];
 const filters: { value: SkillFilter; label: Message }[] = [
@@ -46,6 +52,7 @@ const filters: { value: SkillFilter; label: Message }[] = [
   { value: "backend", label: "Backend" },
   { value: "cloud", label: "Cloud" },
   { value: "tools", label: "Tools & integrations" },
+  { value: "ai", label: "AI tools" },
 ];
 
 export default function Skills({ locale }: LocalizedProps) {
@@ -82,10 +89,10 @@ export default function Skills({ locale }: LocalizedProps) {
         {skills.map((skill) => (
           <div
             key={skill.category}
-            className="
+            className={`
               skill-card glass rounded-[0.9375rem] [transition:transform_.2s,box-shadow_.2s] px-6 py-[1.375rem]
               hover:[transform:translateY(-0.1875rem)] hover:shadow-[0_0.5rem_1.5625rem_#2a3e5510] [&[hidden]]:hidden
-              "
+              ${skill.category === "ai" ? "col-span-2 compact:col-span-1" : ""}`}
             hidden={selected !== "all" && selected !== skill.category}
           >
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t(skill.label)}</span>

@@ -152,4 +152,7 @@ export const ja = {
   "Logic & data": "ロジック・データ",
   "Infrastructure & delivery": "インフラ・デプロイ",
   "The supporting pieces": "開発を支えるツール",
+  "AI tools": "AIツール",
+  "AI TOOLS": "AIツール",
+  "AI-assisted development": "AIを活用した開発",
 } as const;
