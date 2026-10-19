@@ -8,7 +8,11 @@ export default function Hero({ locale }: LocalizedProps) {
         <div className="hero-content min-w-0">
           <h1 className="hero-title font-[550] text-[clamp(2.15rem,5.5vw,3.625rem)] tracking-[-0.12rem] leading-[1.08] mt-[0.65rem] mb-[0.85rem] mx-0">Fadiyah <span className="text-[color:#7b8fa5] block">Adiningsih</span></h1>
           <p className="hero-role flex flex-wrap items-center gap-[0.55rem] mt-0 mb-4 text-[0.875rem] font-medium leading-[1.6] mx-0"><span className="dot w-[0.375rem] h-[0.375rem] rounded-full bg-[#83a39b] shrink-0" aria-hidden="true" />{t("Full Stack Developer")}{" "}<span className="hero-location font-normal text-[color:var(--muted)]">{t("· Japan")}</span></p>
-          <p className="hero-copy text-[color:var(--muted)] text-[0.875rem] leading-[1.9] m-0 compact:text-[0.75rem]">{t("Hi, I’m Faya. I build and improve web applications across frontend and backend,")}{" "}<br className="compact:hidden" />{t("from user-facing features to the systems behind them.")}<br />{t("Originally from Indonesia, I’m now working as a Full Stack Developer in Japan.")}</p>
+          <p className="hero-copy text-[color:var(--muted)] text-[0.875rem] leading-[1.9] m-0 compact:text-[0.75rem]">
+            {t("Hi, I'm Faya. I develop and maintain web applications, working across frontend and backend—from improving existing services to building new features and systems.")}
+            <br />
+            {t("Originally from Indonesia, I'm currently working as a Full Stack Developer in Japan.")}
+          </p>
           <div className="
             hero-experience glass flex items-center gap-4 w-fit max-w-full mt-5 rounded-[1rem] px-[1.15rem]
             py-[0.85rem] compact:w-full compact:px-4 compact:py-[0.9rem]

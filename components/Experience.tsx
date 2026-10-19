@@ -25,7 +25,7 @@ export default function Experience({ locale }: LocalizedProps) {
             </div>
             <span className="date ml-auto text-[0.6875rem] text-[color:var(--muted)] whitespace-nowrap compact:ml-[3.1875rem] compact:basis-full">{t("Apr 2024 — Present")}</span>
           </div>
-          <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("Developing and maintaining web services across frontend and backend, from improvements to existing products to new internal systems.")}</p>
+          <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("I contribute to the development, improvement, and maintenance of multiple web services, working across both frontend and backend. My responsibilities include implementing new features, enhancing existing functionality, troubleshooting issues, and supporting the ongoing operation of these services.")}</p>
           <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">Next.js</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">React</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">TypeScript</span><span className="text-[0.625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.5625rem] py-[0.1875rem]">PHP</span></div>
           <div className="company-projects mt-[1.4375rem] pt-5 [border-top:0.0625rem_solid_var(--line)]">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROJECT CONTRIBUTIONS")}</span>
@@ -33,7 +33,7 @@ export default function Experience({ locale }: LocalizedProps) {
               <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]"><WebsiteLink href="https://www.aeta-baby.jp/">{t("Aeta — Pregnancy & Healthcare Information")}</WebsiteLink></h4>
               <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t("A service providing pregnancy, childbirth, and medical facility information.")}</p>
               <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-2 mx-0">{t("Primary Developer")}</p>
-              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("Main point of contact for feature development, maintenance, and troubleshooting. Develop and maintain features within an existing service, including a pregnancy weight-management calculator and CMS integrations.")}</p>
+              <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t("As the primary developer, I handle feature development, improvements, maintenance, and troubleshooting for Aeta, working across frontend and backend within the existing service.")}</p>
               <details className="mt-[0.9375rem] [border-top:0.0625rem_solid_var(--line)]">
                 <summary className="
                   list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
