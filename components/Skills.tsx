@@ -31,13 +31,13 @@ const skills: Skill[] = [
     "category": "backend",
     "label": "BACKEND",
     "title": "Logic & data",
-    "technologies": "MySQL · PostgreSQL · SQLite · Prisma · NextAuth"
+    "technologies": "GraphQL · MySQL · PostgreSQL · SQLite · Prisma · NextAuth"
   },
   {
     "category": "cloud",
     "label": "CLOUD",
     "title": "Infrastructure & delivery",
-    "technologies": "AWS (EC2, S3) · Vercel · Supabase · Cloudinary · Coolify"
+    "technologies": "AWS (EC2, S3) · Vercel · Heroku · Supabase · Cloudinary · Coolify"
   },
   {
     "category": "tools",
