@@ -49,7 +49,7 @@ const skills: Skill[] = [
     "category": "ai",
     "label": "AI TOOLS",
     "title": "AI-assisted development",
-    "technologies": "ChatGPT · OpenAI Codex · Anthropic Claude · Cursor"
+    "technologies": "ChatGPT · OpenAI Codex · Anthropic Claude · Claude Code · Cursor"
   }
 ];
 const filters: { value: SkillFilter; label: Message }[] = [
