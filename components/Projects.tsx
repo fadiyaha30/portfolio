@@ -3,17 +3,14 @@ import { getTranslator, type LocalizedProps } from "../lib/i18n";
 export default function Projects({ locale }: LocalizedProps) {
   const t = getTranslator(locale);
   return (
-    <section id="work" className="
-      section pt-[1.9375rem] pb-[2.1875rem] w-[calc(100%_+_6.25rem)] ml-[-3.125rem] px-0 compact:px-0
-      compact:py-[1.375rem] projects-stack:w-auto projects-stack:ml-0
-      ">
+    <section id="work" className="section py-8 px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
         <span className="number text-[0.625rem] text-[color:#8995a3]">04</span>
         <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Projects")}</h2>
       </div>
       <h3 className="project-group-heading font-[550] text-[0.9375rem] tracking-[-0.015625rem] mt-0 mb-4 text-[color:#65778b] mx-0">{t("Personal projects")}</h3>
       <div className="personal-projects grid gap-[0.875rem] mb-4 grid-cols-3 items-stretch compact:grid-cols-1">
-        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
+        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-5 phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("Live")}</span></div>
           <h3 className="font-medium text-[1.3125rem] leading-[1.35] min-h-[3.6rem] compact:min-h-0 tracking-[-0.03125rem] mt-0 mb-3 mx-0">Japanese Learning Platform</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A Japanese learning web app that brings JLPT vocabulary search, flashcards, and speech tools together. Built as a personal project to support Japanese study.")}</p>
@@ -30,11 +27,11 @@ export default function Projects({ locale }: LocalizedProps) {
               <li>{t("Built with Next.js, React, TypeScript, and SQLite.")}</li>
             </ul>
           </details>
-          <div className="mt-auto min-h-[5.2rem] pt-[0.875rem] compact:min-h-0">
+          <div className="mt-auto pt-[0.875rem]">
             <div className="project-actions flex flex-wrap gap-x-[1.125rem] gap-y-2 pt-[0.8125rem] [border-top:0.0625rem_solid_var(--line)]"><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] hover:underline" href="https://jp-dict-five.vercel.app/" target="_blank" rel="noopener noreferrer">{t("Live app ↗")}</a><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] hover:underline" href="https://github.com/fadiyaha30/jp-dict" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </div>
         </article>
-        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
+        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-5 phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("In development")}</span></div>
           <h3 className="font-medium text-[1.3125rem] leading-[1.35] min-h-[3.6rem] compact:min-h-0 tracking-[-0.03125rem] mt-0 mb-3 mx-0">Cycling Pit Stops</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A mobile-friendly web app for finding toilets, cafés, rest areas, and repair help during a bicycle ride. Inspired by my own cycling experiences.")}</p>
@@ -56,14 +53,14 @@ export default function Projects({ locale }: LocalizedProps) {
               bg-[rgba(230,236,244,.4)] rounded-[0.4375rem] px-3 py-[0.625rem] mx-0
               ">{t("Scope and architecture are documented; implementation is ongoing. Features and stack shown here are planned.")}</p>
           </details>
-          <div className="mt-auto min-h-[5.2rem] pt-[0.875rem] compact:min-h-0">
+          <div className="mt-auto pt-[0.875rem]">
             <p className="
             project-links-note text-[0.625rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-0
             pt-[0.8125rem] [border-top:0.0625rem_solid_var(--line)] mx-0
             ">{t("GitHub and live demo links will be added when ready.")}</p>
           </div>
         </article>
-        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-[1.375rem] phone:p-4">
+        <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-5 phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("In development")}</span></div>
           <h3 className="font-medium text-[1.3125rem] leading-[1.35] min-h-[3.6rem] compact:min-h-0 tracking-[-0.03125rem] mt-0 mb-3 mx-0">Travel Log</h3>
           <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A private travel diary organised around trips, with photos, notes, and places kept together. Designed for quick journaling on the road and selective sharing with friends.")}</p>
@@ -86,7 +83,7 @@ export default function Projects({ locale }: LocalizedProps) {
               bg-[rgba(230,236,244,.4)] rounded-[0.4375rem] px-3 py-[0.625rem] mx-0
               ">{t("Scope and architecture are documented; implementation is ongoing. Features and stack shown here are planned. Travel Log is the working name.")}</p>
           </details>
-          <div className="mt-auto min-h-[5.2rem] pt-[0.875rem] compact:min-h-0">
+          <div className="mt-auto pt-[0.875rem]">
             <p className="
             project-links-note text-[0.625rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-0
             pt-[0.8125rem] [border-top:0.0625rem_solid_var(--line)] mx-0

@@ -71,7 +71,7 @@ export default function Skills({ locale }: LocalizedProps) {
   ).length;
 
   return (
-    <section id="skills" className="section pt-[1.9375rem] pb-[2.1875rem] px-0 compact:px-0 compact:py-[1.375rem]">
+    <section id="skills" className="section py-8 px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
         <span className="number text-[0.625rem] text-[color:#8995a3]">05</span>
         <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Tools & technologies")}</h2>
@@ -92,12 +92,12 @@ export default function Skills({ locale }: LocalizedProps) {
           </button>
         ))}
       </div>
-      <div className="skills-grid grid grid-cols-2 gap-[0.8125rem] items-start compact:grid-cols-1">
+      <div className="skills-grid grid grid-cols-2 gap-[0.875rem] items-start compact:grid-cols-1">
         {skills.map((skill) => (
           <div
             key={skill.category}
             className="
-              skill-card glass rounded-[0.9375rem] [transition:transform_.2s,box-shadow_.2s] px-6 py-[1.375rem]
+              skill-card glass rounded-[1rem] [transition:transform_.2s,box-shadow_.2s] px-6 py-[1.375rem] compact:p-5 phone:p-4
               hover:[transform:translateY(-0.1875rem)] hover:shadow-[0_0.5rem_1.5625rem_#2a3e5510] [&[hidden]]:hidden
               "
             hidden={selected !== "all" && selected !== skill.category}
