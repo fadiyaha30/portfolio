@@ -34,23 +34,37 @@ export default function Header({ locale }: LocalizedProps) {
   }, [menuOpen]);
 
   useEffect(() => {
-    if (!("IntersectionObserver" in window)) return;
+    // The active section is the last one whose top has scrolled past a line 30%
+    // down the viewport. This works for sections of any height, unlike
+    // visibility ratios, which tall sections such as Experience never reach.
+    const ids = ["home", ...links.map((link) => link.id)];
+    let frame = 0;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActiveSection(visible.target.id);
-      },
-      { rootMargin: "-15% 0px -50% 0px", threshold: [0, 0.15, 0.4] },
-    );
+    const update = () => {
+      frame = 0;
+      const line = window.innerHeight * 0.3;
+      let current: string | null = null;
+      for (const id of ids) {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= line) current = id;
+      }
+      // Short last sections may never reach the line; at the very bottom, use the last one.
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) current = ids[ids.length - 1];
+      setActiveSection(current);
+    };
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
 
-    for (const id of ["home", ...links.map((link) => link.id)]) {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    }
-    return () => observer.disconnect();
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
   }, []);
 
   return (
