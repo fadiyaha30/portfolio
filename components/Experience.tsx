@@ -1,4 +1,5 @@
 import WebsiteLink from "./WebsiteLink";
+import Phrases from "./Phrases";
 import { getTranslator, type LocalizedProps, type Message } from "../lib/i18n";
 
 type CompanyProject = {
@@ -102,7 +103,7 @@ export default function Experience({ locale }: LocalizedProps) {
         <span className="section-aside ml-auto text-[0.6875rem] text-[color:var(--muted)] compact:hidden">{t("Learning through building.")}</span>
       </div>
       <div className="experience-list grid gap-[0.875rem]">
-        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:p-4">
+        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:px-3 phone:py-4">
           <div className="entry-head flex gap-[0.875rem] items-center mb-4 compact:flex-wrap compact:gap-3">
             <div className="
               company-icon bg-white w-[2.4375rem] h-[2.4375rem] flex items-center
@@ -112,7 +113,7 @@ export default function Experience({ locale }: LocalizedProps) {
             </div>
             <div className="entry-title compact:flex-1">
               <h3 className="font-semibold text-[1rem] tracking-[-0.015625rem] m-0 compact:text-[0.875rem]">{t("Full Stack Developer")}</h3>
-              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]"><WebsiteLink href="https://www.piary.jp/">{t("PIARY")}</WebsiteLink>{" "}<span className="text-[color:var(--muted)]">{t("· System Department · Japan · Full-time")}</span></p>
+              <p className="text-[0.6875rem] mt-[0.1875rem] mb-0 text-[color:#53677b] mx-0 compact:text-[0.625rem]"><WebsiteLink href="https://www.piary.jp/">{t("PIARY")}</WebsiteLink>{"\u00a0"}<span className="text-[color:var(--muted)]"><Phrases text={t("· System Department · Japan · Full-time")} /></span></p>
             </div>
             <span className="date ml-auto text-[0.6875rem] text-[color:var(--muted)] whitespace-nowrap compact:ml-[3.1875rem] compact:basis-full">{t("Apr 2024 — Present")}</span>
           </div>
@@ -123,16 +124,16 @@ export default function Experience({ locale }: LocalizedProps) {
           <div className="company-projects mt-[1.4375rem] pt-5 [border-top:0.0625rem_solid_var(--line)]">
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t("PROJECT CONTRIBUTIONS")}</span>
             {piaryProjects.map((project, index) => (
-              <article key={project.title} className={`nested-project ${index === 0 ? "mt-[0.9375rem]" : "mt-[0.875rem]"} bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3`}>
+              <article key={project.title} className={`nested-project ${index === 0 ? "mt-[0.9375rem]" : "mt-[0.875rem]"} bg-[rgba(239,243,249,.45)] [border:0.0625rem_solid_rgba(107,129,154,.1)] rounded-[0.75rem] p-5 compact:p-4 phone:p-3 phone:-mx-1`}>
                 <h4 className="text-[0.9375rem] leading-[1.5] font-semibold mt-0 mb-2 tracking-[-0.0125rem] mx-0 compact:text-[0.875rem]">
                   {project.href ? <WebsiteLink href={project.href}>{t(project.title)}</WebsiteLink> : t(project.title)}
                 </h4>
                 <p className="project-context text-[0.75rem] text-[color:var(--muted)] leading-[1.8] mt-0 mb-[0.8125rem] mx-0">{t(project.context)}</p>
                 <p className="project-role text-[0.6875rem] font-semibold text-[color:#536b83] mt-0 mb-1 mx-0">
                   {t(project.role)}
-                  <span className="font-normal text-[color:var(--muted)]">{` · ${t(project.period)}`}{project.team ? ` · ${t(project.team)}` : ""}</span>
+                  <span className="font-normal text-[color:var(--muted)]">{"\u00a0· "}<Phrases text={[t(project.period), ...(project.team ? [t(project.team)] : [])].join(" · ")} /></span>
                 </p>
-                <p className="project-scope text-[0.625rem] text-[color:var(--muted)] leading-[1.7] mt-0 mb-2 mx-0">{t(project.scope)}</p>
+                <p className="project-scope text-[0.625rem] text-[color:var(--muted)] leading-[1.7] mt-0 mb-2 mx-0"><Phrases text={t(project.scope)} /></p>
                 <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0">{t(project.summary)}</p>
                 <div className="tags flex flex-wrap gap-[0.4375rem] mt-3">
                   {project.tags.map((tag) => <span key={tag} className={tagClass}>{tag}</span>)}
@@ -150,7 +151,7 @@ export default function Experience({ locale }: LocalizedProps) {
             ))}
           </div>
         </article>
-        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:p-4">
+        <article className="experience-card glass rounded-[1rem] px-[1.6875rem] py-6 compact:p-5 phone:px-3 phone:py-4">
           <div className="entry-head flex gap-[0.875rem] items-center mb-4 compact:flex-wrap compact:gap-3">
             <div className="
               company-icon secondary-icon bg-[#e8efec] text-[color:#6e8e81] w-[2.4375rem] h-[2.4375rem] flex

@@ -74,7 +74,6 @@ export const ja = {
   "Indonesia → Japan": "インドネシア → 日本",
   "Personal projects": "個人開発",
   "Live app ↗": "アプリを見る ↗",
-  "PERSONAL PROJECT": "個人開発",
   "In development": "開発中",
   "A mobile-friendly web app for finding toilets, cafés, rest areas, and repair help during a bicycle ride. Inspired by my own cycling experiences.": "サイクリング中にトイレ、カフェ、休憩所、修理できる場所を探せる、スマートフォン向けWebアプリです。自身のサイクリング経験から着想を得ました。",
   "Project plan & technical direction": "開発計画・技術方針",
@@ -94,7 +93,6 @@ export const ja = {
   "Later milestones for maps, memory browsing, and PDF/ZIP exports.": "今後の段階として、地図、思い出の閲覧、PDF・ZIP出力を予定。",
   "Scope and architecture are documented; implementation is ongoing. Features and stack shown here are planned. Travel Log is the working name.": "スコープとアーキテクチャを文書化し、現在実装を進めています。記載の機能・技術構成は計画段階で、Travel Logは仮称です。",
   "Academic projects": "大学での研究",
-  "ACADEMIC PROJECT · UNDERGRADUATE THESIS": "大学での研究 · 卒業研究",
   "Car Detection Simulation": "YOLOアルゴリズムを用いた",
   "Using the YOLO Algorithm": "車両検出シミュレーション",
   "A prototype that connects computer vision with hardware: detecting toy cars and controlling an automatic barrier using an ESP32-CAM, Arduino, and a servo.": "コンピュータビジョンとハードウェアを連携させた試作システムです。模型の車を検出し、ESP32-CAM、Arduino、サーボを使ってバーを自動開閉します。",
@@ -179,4 +177,5 @@ export const ja = {
   "Handled deployments with Coolify, following the standard release procedure.": "Coolifyを使用し、所定の手順に沿ってデプロイを担当。",
   "I’m developing this project to support my own Japanese study while practicing features built around user accounts and saved data. The current version includes:": "自身の日本語学習をサポートしながら、ユーザーアカウントや保存データを扱う機能の開発経験を積むために取り組んでいます。現在のバージョンには以下が含まれます。",
   "The live app is an early version; more features are being added.": "公開中のアプリは初期バージョンで、機能を順次追加しています。",
+  "UNDERGRADUATE THESIS": "卒業研究",
 } as const;

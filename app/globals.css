@@ -47,6 +47,11 @@
   a, button, summary { -webkit-tap-highlight-color: transparent; }
   :focus-visible { outline: 0.125rem solid var(--accent); outline-offset: 0.3125rem; }
 
+  /* Japanese: break between phrases where supported (Chrome, Edge), and keep
+     headings from splitting mid-word in every browser. */
+  html:lang(ja) body { word-break: auto-phrase; }
+  html:lang(ja) :is(h1, h2, h3, h4, summary) { word-break: keep-all; overflow-wrap: anywhere; }
+
   @media (max-width: 54.6875em) {
     html { scroll-padding-top: 5rem; }
   }

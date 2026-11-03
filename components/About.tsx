@@ -1,4 +1,5 @@
 import { getTranslator, type LocalizedProps } from "../lib/i18n";
+import { KeepTogether } from "./Phrases";
 
 export default function About({ locale }: LocalizedProps) {
   const t = getTranslator(locale);
@@ -10,7 +11,7 @@ export default function About({ locale }: LocalizedProps) {
       </div>
       <div className="about-grid grid grid-cols-[1.2fr_1fr] gap-[3.125rem] items-start compact:grid-cols-1 compact:gap-[1.375rem]">
         <div>
-          <p className="lead text-[1.4375rem] leading-[1.4] tracking-[-0.03125rem] mt-0 mb-[0.9375rem] mx-0 compact:text-[1.3125rem]">{t("A Full Stack Developer with curiosity")}<br />{t("for what comes next.")}</p>
+          <p className="lead text-[1.4375rem] leading-[1.4] tracking-[-0.03125rem] mt-0 mb-[0.9375rem] mx-0 compact:text-[1.3125rem]">{t("A Full Stack Developer with curiosity")}{" "}<br className={locale === "en" ? "phone:hidden" : undefined} /><KeepTogether text={t("for what comes next.")} terms={["次の可能性を探す", "フルスタックエンジニア"]} /></p>
           <div className="about-story">
             <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("I grew up watching Doraemon, and its futuristic gadgets sparked my curiosity about technology and Japan. That curiosity eventually led me to study Electronics and Instrumentation at Universitas Gadjah Mada in Indonesia, where I discovered how much I enjoyed bringing ideas to life through code. For my thesis, I combined YOLO-based vehicle detection with an automatic barrier prototype, bringing software and hardware together.")}</p>
             <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] mt-[0.9375rem] mb-0 mx-0 compact:text-[0.75rem]">{t("Today, I'm living in Japan and working as a Full Stack Developer, building and maintaining web applications across frontend and backend. Although my academic background wasn't focused on web development, I've developed my skills through hands-on experience, independent learning, and collaboration with the people around me.")}</p>
