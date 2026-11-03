@@ -13,19 +13,24 @@ export default function Projects({ locale }: LocalizedProps) {
         <article className="experience-card glass personal-project flex h-full flex-col rounded-[1rem] min-w-0 px-[1.1875rem] py-[1.3125rem] compact:p-5 phone:p-4">
           <div className="project-topline flex justify-between items-center gap-2 mb-3 flex-wrap min-h-[2.875rem] content-start compact:min-h-0"><span className="small-label text-[0.5625rem] font-semibold tracking-[0.0625rem] text-[color:var(--accent)]">{t("PERSONAL PROJECT")}</span><span className="progress-badge text-[0.625rem] text-[color:#53756b] bg-[#e7f0eb] rounded-[1.25rem] whitespace-nowrap px-[0.5625rem] py-[0.1875rem]">{t("In development")}</span></div>
           <h3 className="font-medium text-[1.3125rem] leading-[1.35] min-h-[3.6rem] compact:min-h-0 tracking-[-0.03125rem] mt-0 mb-3 mx-0">JP-Dict</h3>
-          <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A Japanese learning web app with word search, grammar lessons, quizzes, favorite words, and study history. Built as a personal project to support my own Japanese study.")}</p>
+          <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("A Japanese learning web app with word search, grammar lessons, quizzes, favorite words, and study history. Inspired by my own Japanese study.")}</p>
           <div className="tags flex flex-wrap gap-[0.3125rem] mt-[0.9375rem]"><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">Next.js</span><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">React</span><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">TypeScript</span><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">Tailwind CSS</span><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">SQLite</span><span className="text-[0.5625rem] bg-[rgba(225,233,242,.45)] rounded-[0.3125rem] text-[color:#65798e] px-[0.4375rem] py-[0.1875rem]">NextAuth.js</span></div>
           <details className="mt-[1.125rem] [border-top:0.0625rem_solid_var(--line)]">
             <summary className="
               list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
               cursor-pointer gap-[0.625rem] px-0 [&::-webkit-details-marker]:hidden
-              ">{t("Features & implementation")}{" "}<span className="text-[1.0625rem] [transition:transform_.2s] [details[open]_&]:[transform:rotate(45deg)]" aria-hidden="true">+</span></summary>
+              ">{t("Project plan & technical direction")}{" "}<span className="text-[1.0625rem] [transition:transform_.2s] [details[open]_&]:[transform:rotate(45deg)]" aria-hidden="true">+</span></summary>
+            <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] mt-3 mb-0 mx-0 compact:text-[0.75rem]">{t("I’m developing this project to support my own Japanese study while practicing features built around user accounts and saved data. The current version includes:")}</p>
             <ul className="pl-[1.125rem] mt-3 mb-0 text-[0.6875rem] text-[color:var(--muted)] leading-[1.9] mx-0">
               <li>{t("Japanese word search and grammar lessons.")}</li>
               <li>{t("Quizzes, favorite words, and study history.")}</li>
-              <li>{t("User authentication with NextAuth.js and per-user study data.")}</li>
-                            <li>{t("Built with Next.js, React, TypeScript, Tailwind CSS, and SQLite.")}</li>
+              <li>{t("User accounts with NextAuth.js, so study data is saved per user.")}</li>
+              <li>{t("A Next.js and TypeScript app with SQLite storage, styled with Tailwind CSS.")}</li>
             </ul>
+            <p className="
+              project-stage-note text-[0.625rem] text-[color:var(--muted)] leading-[1.8] mt-[0.875rem] mb-0
+              bg-[rgba(230,236,244,.4)] rounded-[0.4375rem] px-3 py-[0.625rem] mx-0
+              ">{t("The live app is an early version; more features are being added.")}</p>
           </details>
           <div className="mt-auto pt-[0.875rem]">
             <div className="project-actions flex flex-wrap gap-x-[1.125rem] gap-y-2 pt-[0.8125rem] [border-top:0.0625rem_solid_var(--line)]"><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] hover:underline" href="https://jp-dict-five.vercel.app/" target="_blank" rel="noopener noreferrer">{t("Live app ↗")}</a><a className="thesis-link inline-block text-[0.6875rem] text-[color:#536b83] hover:underline" href="https://github.com/fadiyaha30/jp-dict" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
