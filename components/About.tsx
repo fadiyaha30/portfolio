@@ -81,7 +81,7 @@ export default function About({ locale }: LocalizedProps) {
                 ">
                 <span className="milestone-time block text-[0.625rem] text-[color:#6c8196] leading-[1.5] mb-[0.3125rem]">{t("Today")}</span>
                 <h3 className="font-[550] text-[0.8125rem] tracking-[-0.015625rem] mt-0 mb-[0.3125rem] mx-0">{t("Building & learning")}</h3>
-                <p className="text-[0.6875rem] leading-[1.8] text-[color:var(--muted)] m-0">{t("Growing as a Full Stack Developer, with curiosity about app development, AI, and what I can build next.")}</p>
+                <p className="text-[0.6875rem] leading-[1.8] text-[color:var(--muted)] m-0">{t("Growing as a Full Stack Developer while exploring new technologies, including AI.")}</p>
               </li>
             </ol>
           </div>

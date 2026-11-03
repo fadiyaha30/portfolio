@@ -36,7 +36,7 @@ export const ja = {
   "Started developing and maintaining web applications across frontend and backend at PIARY in Japan.": "日本の株式会社ピアリーにて、フロントエンドからバックエンドまでWebアプリケーションの開発・保守を開始しました。",
   "Today": "現在",
   "Building & learning": "開発と学びを重ねる",
-  "Growing as a Full Stack Developer, with curiosity about app development, AI, and what I can build next.": "フルスタックエンジニアとして経験を重ねながら、アプリ開発やAIなど、新しい分野にも関心を広げています。",
+  "Growing as a Full Stack Developer while exploring new technologies, including AI.": "フルスタックエンジニアとして成長しながら、AIをはじめとする新しい技術にも挑戦しています。",
   "Universitas Gadjah Mada": "ガジャマダ大学（UGM）",
   "Indonesia · Graduated February 2024": "インドネシア · 2024年2月卒業",
   "Thesis: Car Detection Simulation Using YOLO ↓": "卒業研究：YOLOを用いた車両検出シミュレーション ↓",
