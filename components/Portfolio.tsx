@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Experience from "./Experience";
 import Education from "./Education";
+import Certifications from "./Certifications";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
@@ -19,6 +20,7 @@ export default function Portfolio({ locale }: LocalizedProps) {
         <About locale={locale} />
         <Experience locale={locale} />
         <Education locale={locale} />
+        <Certifications locale={locale} />
         <Projects locale={locale} />
         <Skills locale={locale} />
       </main>

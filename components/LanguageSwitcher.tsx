@@ -3,7 +3,7 @@ import { localePath, type LocalizedProps } from "../lib/i18n";
 export default function LanguageSwitcher({ locale }: LocalizedProps) {
   return (
     <div
-      className="flex shrink-0 items-center gap-1 rounded-[0.6rem] border border-solid border-[var(--line)] bg-white/40 p-1 compact:ml-auto"
+      className="flex shrink-0 items-center gap-1 rounded-[0.6rem] border border-solid border-[var(--line)] bg-white/40 p-1 menu:ml-auto"
       role="group"
       aria-label={locale === "ja" ? "表示言語" : "Language"}
     >
