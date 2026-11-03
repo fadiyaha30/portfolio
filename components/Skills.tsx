@@ -3,6 +3,7 @@
 import { getTranslator, type LocalizedProps, type Message, formatSkillCount } from "../lib/i18n";
 
 import { useState } from "react";
+import Phrases from "./Phrases";
 
 type SkillCategory = "languages" | "frontend" | "backend" | "cloud" | "tools" | "ai";
 type SkillFilter = "all" | SkillCategory;
@@ -76,12 +77,12 @@ export default function Skills({ locale }: LocalizedProps) {
         <span className="number text-[0.625rem] text-[color:#8995a3]">06</span>
         <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Tools & technologies")}</h2>
       </div>
-      <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem]" role="group" aria-label={t("Filter skills")}>
+      <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem] phone:flex-nowrap phone:overflow-x-auto phone:-mx-4 phone:px-4 phone:py-2 phone:mb-[0.625rem] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="group" aria-label={t("Filter skills")}>
         {filters.map((filter) => (
           <button
             key={filter.value}
             type="button"
-            className={`[border:0.0625rem_solid_transparent] bg-[transparent] rounded-[0.5rem] text-[0.6875rem] text-[color:var(--muted)] cursor-pointer px-3 py-[0.4375rem] [&.active]:bg-[#e7edf4] [&.active]:text-[color:#465e77] [&.active]:[border-color:#dce4ed] hover:bg-[#edf1f7] ${(selected === filter.value ? "active" : undefined) ?? ""}`}
+            className={`shrink-0 whitespace-nowrap [border:0.0625rem_solid_var(--line)] bg-[transparent] rounded-[0.5rem] text-[0.6875rem] text-[color:var(--muted)] cursor-pointer px-3 py-[0.4375rem] [&.active]:bg-[#e7edf4] [&.active]:text-[color:#465e77] [&.active]:[border-color:#dce4ed] hover:bg-[#edf1f7] ${(selected === filter.value ? "active" : undefined) ?? ""}`}
             aria-pressed={selected === filter.value}
             onClick={() => {
               setSelected(filter.value);
@@ -104,7 +105,7 @@ export default function Skills({ locale }: LocalizedProps) {
           >
             <span className="small-label text-[0.625rem] font-semibold tracking-[0.10625rem] text-[color:var(--accent)]">{t(skill.label)}</span>
             <h3 className="font-semibold text-[0.9375rem] tracking-[-0.015625rem] mt-[0.5625rem] mb-[0.625rem] mx-0">{t(skill.title)}</h3>
-            <p className="text-[0.75rem] leading-[1.9] text-[color:var(--muted)] m-0">{skill.technologies}</p>
+            <p className="text-[0.75rem] leading-[1.9] text-[color:var(--muted)] m-0"><Phrases text={skill.technologies} /></p>
           </div>
         ))}
       </div>
