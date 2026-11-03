@@ -3,7 +3,7 @@ import { getTranslator, type LocalizedProps } from "../lib/i18n";
 export default function Hero({ locale }: LocalizedProps) {
   const t = getTranslator(locale);
   return (
-    <section className="hero pt-[clamp(0.75rem,2.5vh,1.75rem)] pb-[2.6875rem] px-0" id="home">
+    <section className="hero pt-[clamp(0.75rem,2.5vh,1.75rem)] pb-8 px-0 compact:pb-[1.375rem]" id="home">
       <div className="hero-layout grid grid-cols-[minmax(0,1fr)_15rem] gap-[2.8125rem] items-center compact:grid-cols-1 compact:gap-7">
         <div className="hero-content min-w-0">
           <h1 className="hero-title font-[550] text-[clamp(2.15rem,5.5vw,3.625rem)] tracking-[-0.12rem] leading-[1.08] mt-[0.65rem] mb-[0.85rem] mx-0">Fadiyah <span className="text-[color:#7b8fa5] block">Adiningsih</span></h1>

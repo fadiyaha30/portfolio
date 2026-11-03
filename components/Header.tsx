@@ -54,8 +54,8 @@ export default function Header({ locale }: LocalizedProps) {
 
   return (
     <header className="
-      glass max-w-250 mt-[1.375rem] mb-0 rounded-[1rem] flex items-center gap-[1.875rem] sticky top-4 z-[5]
-      px-[1.5625rem] py-[0.9375rem] mx-auto inset:mx-[5%] compact:gap-2 compact:flex-wrap
+      glass max-w-225 mt-[1.375rem] mb-0 rounded-[1rem] flex items-center gap-[1.875rem] sticky top-4 z-[5]
+      px-[1.5625rem] py-[0.9375rem] mx-auto inset:mx-[8%] phone:mx-4 compact:gap-2 compact:flex-wrap
       compact:top-2 compact:mt-3 compact:rounded-[0.8125rem] compact:px-3 compact:py-2
       ">
       <a className="brand text-[1.4375rem] font-[650] tracking-[-0.0625rem] compact:text-[1.25rem]" href="#home">Faya<span className="text-[color:#7a97b1]">.</span></a>

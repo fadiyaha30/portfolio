@@ -39,7 +39,7 @@ export const ja = {
   "Growing as a Full Stack Developer, with curiosity about app development, AI, and what I can build next.": "フルスタックエンジニアとして経験を重ねながら、アプリ開発やAIなど、新しい分野にも関心を広げています。",
   "Universitas Gadjah Mada": "ガジャマダ大学（UGM）",
   "Indonesia · Graduated February 2024": "インドネシア · 2024年2月卒業",
-  "Thesis: Car Detection Simulation Using YOLO ↗": "卒業研究：YOLOを用いた車両検出シミュレーション ↗",
+  "Thesis: Car Detection Simulation Using YOLO ↓": "卒業研究：YOLOを用いた車両検出シミュレーション ↓",
   "Jul 2019 — Feb 2024": "2019年7月〜2024年2月",
   "Learning through building.": "開発を通じて学び、成長する。",
   "Full Stack Developer": "フルスタックエンジニア",

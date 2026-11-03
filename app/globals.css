@@ -3,7 +3,6 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 /* Preserve the original inclusive, em-based breakpoints and 125% scale. */
-@custom-variant projects-stack (@media (max-width: 85.9375em));
 @custom-variant inset (@media (max-width: 84.375em));
 @custom-variant compact (@media (max-width: 54.6875em));
 @custom-variant phone (@media (max-width: 30em));
