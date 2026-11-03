@@ -1,4 +1,5 @@
 import { getTranslator, type LocalizedProps } from "../lib/i18n";
+import { yearsOfExperience } from "../lib/career";
 
 export default function Hero({ locale }: LocalizedProps) {
   const t = getTranslator(locale);
@@ -18,7 +19,7 @@ export default function Hero({ locale }: LocalizedProps) {
             py-[0.85rem] compact:w-full compact:px-4 compact:py-[0.9rem]
             " role="group" aria-label={t("Professional experience")}>
             <p className="hero-experience-value grid gap-1 shrink-0 pr-4 [border-right:0.0625rem_solid_var(--line)] text-[color:var(--accent)] m-0">
-              <strong className="text-[2.25rem] font-semibold leading-[1] tracking-[-0.08rem]">2+</strong>
+              <strong className="text-[2.25rem] font-semibold leading-[1] tracking-[-0.08rem]">{yearsOfExperience()}+</strong>
               <span className="text-[0.625rem] leading-[1.4] tracking-[0.04rem]">{t("years")}</span>
             </p>
             <div className="hero-experience-copy min-w-0">

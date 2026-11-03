@@ -77,3 +77,13 @@ test('language metadata has distinct canonical URLs and reciprocal language alte
     assert.ok(metadata.title.includes(locale === 'ja' ? 'フルスタックエンジニア' : 'Full Stack Developer'));
   }
 });
+
+test('years of experience counts completed years since April 2024', () => {
+  const { yearsOfExperience } = loadTypeScript('lib/career.ts');
+  assert.equal(yearsOfExperience(new Date(2024, 3, 1)), 0);
+  assert.equal(yearsOfExperience(new Date(2026, 2, 31)), 1);
+  assert.equal(yearsOfExperience(new Date(2026, 3, 1)), 2);
+  assert.equal(yearsOfExperience(new Date(2026, 10, 3)), 2);
+  assert.equal(yearsOfExperience(new Date(2027, 2, 31)), 2);
+  assert.equal(yearsOfExperience(new Date(2027, 3, 1)), 3);
+});
