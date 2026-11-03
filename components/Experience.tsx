@@ -24,7 +24,7 @@ const piaryProjects: CompanyProject[] = [
     period: "Apr 2024 — Present",
     team: "Team of 2",
     scope: "Scope: requirements, design, implementation, testing, release, and maintenance",
-    summary: "As the primary developer, I handle Aeta’s development across frontend and backend, from planning and building new features to improving existing ones, fixing bugs, and keeping the site running. Much of my work centers on the Strapi CMS and how articles are presented.",
+    summary: "As the primary developer, I handle Aeta’s development across frontend and backend. Most of my work comes from sales team requests: they consult with me before any new feature or fix, so I help shape what gets built as well as building, improving, and maintaining it.",
     items: [
       "Planned, built, and launched a pregnancy weight calculator that ranked #1 in monthly on-site page views.",
       "Developed and improved Strapi-based management for articles and medical supervisor profiles.",
@@ -41,7 +41,7 @@ const piaryProjects: CompanyProject[] = [
     role: "Sole Developer",
     period: "Dec 2024 — Present",
     scope: "Scope: design, implementation, testing, release, and maintenance",
-    summary: "Built the FAQ site and its admin panel from scratch on my own with Next.js and TypeScript. Implemented database integration with Prisma, authentication with NextAuth.js, and role-based access control, creating a system for managing and operating FAQ content.",
+    summary: "I built the FAQ site and its admin panel from scratch on my own with Next.js and TypeScript. I implemented database integration with Prisma, authentication with NextAuth.js, and role-based access control, creating a system for managing and operating FAQ content.",
     items: [
       "Built the FAQ site and admin panel from scratch.",
       "Implemented FAQ content display and management features.",
@@ -59,7 +59,7 @@ const piaryProjects: CompanyProject[] = [
     period: "Dec 2025 — Present",
     team: "Team of 3",
     scope: "Scope: design, implementation, testing, release and deployment, and maintenance",
-    summary: "Joined partway through development and became the primary developer. Designed and built the Operator Admin area on my own, bringing organization management, administrator invitations, and role-based access control together in one place.",
+    summary: "I joined partway through development and became the primary developer. I designed and built the Operator Admin area on my own, bringing organization management, administrator invitations, and role-based access control together in one place.",
     items: [
       "Designed and built the Operator Admin area for operators.",
       "Implemented organization creation and management, and invitations for initial administrators.",
@@ -78,7 +78,7 @@ const piaryProjects: CompanyProject[] = [
     period: "Jun 2026 — Present",
     team: "Team of 2",
     scope: "Scope: design, implementation, testing, release and deployment, and maintenance",
-    summary: "Worked on migrating existing PHP-based screens to React, including UI updates and bug fixes for guest check-in. Also resolved deployment issues and fixed inconsistencies between the develop, staging, and main branches, restoring a working development and release flow.",
+    summary: "I worked on migrating existing PHP-based screens to React, including UI updates and bug fixes for guest check-in. I also resolved deployment issues and fixed inconsistencies between the develop, staging, and main branches, restoring a working development and release flow.",
     items: [
       "Migrated existing PHP-based screens to React.",
       "Updated the UI and fixed bugs on the guest check-in screens (manual and QR code).",
@@ -162,14 +162,14 @@ export default function Experience({ locale }: LocalizedProps) {
             </div>
             <span className="date ml-auto text-[0.6875rem] text-[color:var(--muted)] whitespace-nowrap compact:ml-[3.1875rem] compact:basis-full">{t("May — Jul 2022")}</span>
           </div>
-          <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("Supported technical research, testing, and development using Python and AWS.")}</p>
+          <p className="body-copy text-[0.8125rem] text-[color:var(--muted)] leading-[1.85] m-0 compact:text-[0.75rem]">{t("I supported technical research, testing, and development using Python and AWS.")}</p>
           <div className="tags flex flex-wrap gap-[0.4375rem] mt-[0.9375rem]"><span className={tagClass}>Python</span><span className={tagClass}>AWS</span></div>
           <details className="mt-[1.125rem] [border-top:0.0625rem_solid_var(--line)]">
             <summary className="
               list-none flex justify-between items-center pt-[0.8125rem] pb-0 text-[0.6875rem] text-[color:#536b83]
               cursor-pointer px-0 [&::-webkit-details-marker]:hidden
               ">{t("More about the internship")}{" "}<span className="text-[1.0625rem] [transition:transform_.2s] [details[open]_&]:[transform:rotate(45deg)]" aria-hidden="true">+</span></summary>
-            <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] mt-3 mb-0 mx-0">{t("Assisted with investigation and testing of facial recognition technology as part of research and development support.")}</p>
+            <p className="body-copy text-[0.75rem] text-[color:var(--muted)] leading-[1.85] mt-3 mb-0 mx-0">{t("I assisted with investigating and testing facial recognition technology as part of research and development support.")}</p>
           </details>
         </article>
       </div>
