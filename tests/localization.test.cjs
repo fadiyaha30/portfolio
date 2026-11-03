@@ -47,14 +47,14 @@ for (const locale of ['en', 'ja']) {
     assert.match(html, /Adiningsih/);
     assert.match(html, /mailto:fayadin.work@gmail.com/);
     assert.match(html, /https:\/\/github.com\/fadiyaha30/);
-    for (const id of ['about', 'experience', 'education', 'work', 'skills']) {
+    for (const id of ['about', 'experience', 'education', 'certifications', 'work', 'skills']) {
       assert.ok(html.includes(`id="${id}"`));
     }
     assert.match(html, /href="\/" lang="en" hrefLang="en"/);
     assert.match(html, /href="\/ja" lang="ja" hrefLang="ja"/);
     assert.ok(html.includes(`href="${locale === 'ja' ? '/ja' : '/'}" lang="${locale}" hrefLang="${locale}" aria-label="${locale === 'ja' ? '日本語' : 'English'}" aria-current="page"`));
     if (locale === 'ja') {
-      for (const text of ['フルスタックエンジニア', 'キャリアの歩み', '2022年5月〜7月', '妊娠中の体重管理', 'ユーザー認証。', '開発中', 'スキルのカテゴリで絞り込み']) {
+      for (const text of ['フルスタックエンジニア', 'キャリアの歩み', '2022年5月〜7月', '妊娠中の体重管理', 'ユーザー認証と', '開発中', 'スキルのカテゴリで絞り込み']) {
         assert.ok(html.includes(text), `Missing Japanese content: ${text}`);
       }
       for (const text of ['View my work', 'My contributions', 'In development', 'Learning through building.']) {
@@ -63,7 +63,7 @@ for (const locale of ['en', 'ja']) {
     } else {
       assert.ok(html.includes('Full Stack Developer'));
       assert.ok(html.includes('View my work'));
-      assert.ok(html.includes('May–Jul 2022'));
+      assert.ok(html.includes('May — Jul 2022 · Internship'));
       assert.ok(html.includes('In development'));
     }
   });

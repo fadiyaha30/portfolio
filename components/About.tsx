@@ -46,7 +46,7 @@ export default function About({ locale }: LocalizedProps) {
                 before:[border:0.125rem_solid_#f8fafd] before:rounded-full before:shadow-[0_0_0_0.0625rem_#cbd6e2]
                 last:before:bg-[#668a7b]
                 ">
-                <span className="milestone-time block text-[0.625rem] text-[color:#6c8196] leading-[1.5] mb-[0.3125rem]">{t("May–Jul 2022 · Internship")}</span>
+                <span className="milestone-time block text-[0.625rem] text-[color:#6c8196] leading-[1.5] mb-[0.3125rem]">{t("May — Jul 2022 · Internship")}</span>
                 <h3 className="font-[550] text-[0.8125rem] tracking-[-0.015625rem] mt-0 mb-[0.3125rem] mx-0">{t("Cloud Developer Intern")}</h3>
                 <p className="text-[0.6875rem] leading-[1.8] text-[color:var(--muted)] m-0">{t("Supported research, testing, and development with Python and AWS at PT Ruang Cipta Teknologi.")}</p>
               </li>

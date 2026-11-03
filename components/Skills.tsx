@@ -25,31 +25,31 @@ const skills: Skill[] = [
     "category": "frontend",
     "label": "FRONTEND",
     "title": "Interfaces & interaction",
-    "technologies": "React · Next.js · Tailwind CSS"
+    "technologies": "React · Next.js · Tailwind CSS · Inertia.js"
   },
   {
     "category": "backend",
     "label": "BACKEND",
     "title": "Logic & data",
-    "technologies": "GraphQL · MySQL · PostgreSQL · SQLite · Prisma · NextAuth"
+    "technologies": "Laravel · Next.js API Routes · NextAuth.js · GraphQL · MySQL · PostgreSQL · SQLite · Supabase · Prisma"
   },
   {
     "category": "cloud",
     "label": "CLOUD",
     "title": "Infrastructure & delivery",
-    "technologies": "AWS (EC2, S3) · Vercel · Heroku · Supabase · Cloudinary · Coolify"
+    "technologies": "AWS (EC2, S3) · Vercel · Heroku · Cloudinary · Coolify"
   },
   {
     "category": "tools",
     "label": "TOOLS & INTEGRATIONS",
-    "title": "The supporting pieces",
-    "technologies": "Git · npm · VS Code · Strapi · Stripe · Laravel Reverb · Playwright · GA4 · Looker Studio · Whisper"
+    "title": "Tools, CMS & analytics",
+    "technologies": "Git · Strapi · Playwright · GA4 · Looker Studio · SEO"
   },
   {
     "category": "ai",
     "label": "AI TOOLS",
     "title": "AI-assisted development",
-    "technologies": "ChatGPT · OpenAI Codex · Anthropic Claude · Claude Code · Cursor"
+    "technologies": "ChatGPT · Codex · Claude · Claude Code · Cursor"
   }
 ];
 const filters: { value: SkillFilter; label: Message }[] = [
@@ -73,7 +73,7 @@ export default function Skills({ locale }: LocalizedProps) {
   return (
     <section id="skills" className="section py-8 px-0 compact:py-[1.375rem]">
       <div className="section-heading flex items-center gap-[0.8125rem] mb-[1.375rem]">
-        <span className="number text-[0.625rem] text-[color:#8995a3]">05</span>
+        <span className="number text-[0.625rem] text-[color:#8995a3]">06</span>
         <h2 className="font-[550] text-[1.375rem] tracking-[-0.0375rem] m-0 compact:text-[1.25rem]">{t("Tools & technologies")}</h2>
       </div>
       <div className="filters flex gap-[0.375rem] flex-wrap mb-[1.125rem]" role="group" aria-label={t("Filter skills")}>
